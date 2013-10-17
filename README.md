@@ -1,4 +1,4 @@
-Demo app for URX and Parse integration
+## Demo app for URX and Parse integration
 Learn how to set up URX end-to-end by following this guide to creating a Web app that deeplinks into an iOS app.
 =======
 
