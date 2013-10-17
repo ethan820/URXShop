@@ -1,6 +1,6 @@
 ## Demo app for URX and Parse integration
 
--Follow this guide to setting up URX Turnpike end-to-end by, creating a simple Web app that deeplinks into a Turnpike-enabled iOS app.
+-Follow this guide to setting up URX turnpike-ios router end-to-end by, creating a simple Web app that deeplinks into a Turnpike-enabled iOS app.
 
 =======
 
