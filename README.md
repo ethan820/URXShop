@@ -1,11 +1,10 @@
 ## Demo app for URX and Parse integration
 
-Learn how to set up URX end-to-end by following this guide to creating a Web app that deeplinks into a simple iOS app.
+Follow this guide to setting up URX end-to-end by, creating a Web app that deeplinks into a simple iOS app.
 
 =======
 
 # Quickstart
-=======
 
 ## Seed sample products on Parse
 
