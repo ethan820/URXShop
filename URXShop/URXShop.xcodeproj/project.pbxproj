@@ -25,12 +25,9 @@
 		49524E1B16E032A1000E08B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */; };
 		540CE8AA18108E2F00C7FC20 /* libTurnpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540CE8A718108BFF00C7FC20 /* libTurnpike.a */; };
 		546358851810545200277EDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358841810545200277EDE /* main.m */; };
-		546358881810545B00277EDE /* Store-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 546358861810545B00277EDE /* Store-Info.plist */; };
+		546358881810545B00277EDE /* URXShop-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 546358861810545B00277EDE /* URXShop-Info.plist */; };
 		5463588B1810547100277EDE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463588A1810547100277EDE /* MBProgressHUD.m */; };
-		5463589C1810549400277EDE /* PFProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358911810549400277EDE /* PFProducts.m */; };
-		5463589D1810549400277EDE /* PFProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358931810549400277EDE /* PFProductsViewController.m */; };
-		5463589E1810549400277EDE /* PFProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358951810549400277EDE /* PFProductTableViewCell.m */; };
-		546358A01810549400277EDE /* PFStoreAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358991810549400277EDE /* PFStoreAppDelegate.m */; };
+		546358A01810549400277EDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358991810549400277EDE /* AppDelegate.m */; };
 		546358CE181054A700277EDE /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 546358A1181054A700277EDE /* arrow.png */; };
 		546358CF181054A700277EDE /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546358A2181054A700277EDE /* arrow@2x.png */; };
 		546358D0181054A700277EDE /* ButtonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 546358A3181054A700277EDE /* ButtonBack.png */; };
@@ -77,7 +74,9 @@
 		546358F9181054A700277EDE /* topBarBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 546358CC181054A700277EDE /* topBarBg.png */; };
 		546358FA181054A700277EDE /* topBarBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546358CD181054A700277EDE /* topBarBg@2x.png */; };
 		546358FD181054CC00277EDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546358FB181054CC00277EDE /* InfoPlist.strings */; };
-		546358FF181057DB00277EDE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546358FE181057DB00277EDE /* Parse.framework */; };
+		54A2B99818109A6E0009C970 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A2B99718109A6E0009C970 /* Parse.framework */; };
+		54A2B99B18109AAF0009C970 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 54A2B99918109AAF0009C970 /* Development.xcconfig */; };
+		54A2B99C18109AAF0009C970 /* Distribution.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 54A2B99A18109AAF0009C970 /* Distribution.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,18 +116,12 @@
 		49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Turnpike.xcodeproj; path = "../turnpike-ios/Turnpike.xcodeproj"; sourceTree = "<group>"; };
 		546358841810545200277EDE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = URXShop/main.m; sourceTree = SOURCE_ROOT; };
-		546358861810545B00277EDE /* Store-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Store-Info.plist"; path = "URXShop/Store-Info.plist"; sourceTree = SOURCE_ROOT; };
-		546358871810545B00277EDE /* Store-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Store-Prefix.pch"; path = "URXShop/Store-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		546358861810545B00277EDE /* URXShop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "URXShop-Info.plist"; path = "URXShop/URXShop-Info.plist"; sourceTree = SOURCE_ROOT; };
+		546358871810545B00277EDE /* URXShop-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "URXShop-Prefix.pch"; path = "URXShop/URXShop-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		546358891810547100277EDE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = URXShop/Vendor/MBProgressHUD/MBProgressHUD.h; sourceTree = SOURCE_ROOT; };
 		5463588A1810547100277EDE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = URXShop/Vendor/MBProgressHUD/MBProgressHUD.m; sourceTree = SOURCE_ROOT; };
-		546358901810549400277EDE /* PFProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFProducts.h; path = URXShop/Classes/PFProducts.h; sourceTree = SOURCE_ROOT; };
-		546358911810549400277EDE /* PFProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFProducts.m; path = URXShop/Classes/PFProducts.m; sourceTree = SOURCE_ROOT; };
-		546358921810549400277EDE /* PFProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFProductsViewController.h; path = URXShop/Classes/PFProductsViewController.h; sourceTree = SOURCE_ROOT; };
-		546358931810549400277EDE /* PFProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFProductsViewController.m; path = URXShop/Classes/PFProductsViewController.m; sourceTree = SOURCE_ROOT; };
-		546358941810549400277EDE /* PFProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFProductTableViewCell.h; path = URXShop/Classes/PFProductTableViewCell.h; sourceTree = SOURCE_ROOT; };
-		546358951810549400277EDE /* PFProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFProductTableViewCell.m; path = URXShop/Classes/PFProductTableViewCell.m; sourceTree = SOURCE_ROOT; };
-		546358981810549400277EDE /* PFStoreAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFStoreAppDelegate.h; path = URXShop/Classes/PFStoreAppDelegate.h; sourceTree = SOURCE_ROOT; };
-		546358991810549400277EDE /* PFStoreAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFStoreAppDelegate.m; path = URXShop/Classes/PFStoreAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		546358981810549400277EDE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = URXShop/Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		546358991810549400277EDE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = URXShop/Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		546358A1181054A700277EDE /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = URXShop/Images/arrow.png; sourceTree = SOURCE_ROOT; };
 		546358A2181054A700277EDE /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow@2x.png"; path = "URXShop/Images/arrow@2x.png"; sourceTree = SOURCE_ROOT; };
 		546358A3181054A700277EDE /* ButtonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonBack.png; path = URXShop/Images/ButtonBack.png; sourceTree = SOURCE_ROOT; };
@@ -175,7 +168,9 @@
 		546358CC181054A700277EDE /* topBarBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = topBarBg.png; path = URXShop/Images/topBarBg.png; sourceTree = SOURCE_ROOT; };
 		546358CD181054A700277EDE /* topBarBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "topBarBg@2x.png"; path = "URXShop/Images/topBarBg@2x.png"; sourceTree = SOURCE_ROOT; };
 		546358FC181054CC00277EDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = URXShop/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
-		546358FE181057DB00277EDE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = URXShop/Vendor/Parse.framework; sourceTree = "<group>"; };
+		54A2B99718109A6E0009C970 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = URXShop/Vendor/Parse.framework; sourceTree = "<group>"; };
+		54A2B99918109AAF0009C970 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = SOURCE_ROOT; };
+		54A2B99A18109AAF0009C970 /* Distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Distribution.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,10 +185,10 @@
 				49524E1516E03272000E08B7 /* Security.framework in Frameworks */,
 				49524DFB16E00F47000E08B7 /* QuartzCore.framework in Frameworks */,
 				49524E1316E03262000E08B7 /* MobileCoreServices.framework in Frameworks */,
-				546358FF181057DB00277EDE /* Parse.framework in Frameworks */,
 				49524E1116E0325B000E08B7 /* libz.1.1.3.dylib in Frameworks */,
 				49524E0F16E03252000E08B7 /* libsqlite3.dylib in Frameworks */,
 				49524E0D16E0324A000E08B7 /* CoreLocation.framework in Frameworks */,
+				54A2B99818109A6E0009C970 /* Parse.framework in Frameworks */,
 				4918FAAF16DC4A5400C663F8 /* CoreGraphics.framework in Frameworks */,
 				49524E0B16E03233000E08B7 /* CFNetwork.framework in Frameworks */,
 				49524E0916E0322B000E08B7 /* AdSupport.framework in Frameworks */,
@@ -228,7 +223,7 @@
 		4918FAA916DC4A5400C663F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				546358FE181057DB00277EDE /* Parse.framework */,
+				54A2B99718109A6E0009C970 /* Parse.framework */,
 				49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */,
 				49524E1816E0328D000E08B7 /* StoreKit.framework */,
 				49524E1616E03278000E08B7 /* Social.framework */,
@@ -252,11 +247,13 @@
 		4918FAB016DC4A5400C663F8 /* URXShop */ = {
 			isa = PBXGroup;
 			children = (
+				54A2B99918109AAF0009C970 /* Development.xcconfig */,
+				54A2B99A18109AAF0009C970 /* Distribution.xcconfig */,
 				4999CBE516DD599900C6C8FC /* Classes */,
 				49524D9916E0097A000E08B7 /* Vendor */,
 				4999CBEA16DD599900C6C8FC /* Images */,
-				546358861810545B00277EDE /* Store-Info.plist */,
-				546358871810545B00277EDE /* Store-Prefix.pch */,
+				546358861810545B00277EDE /* URXShop-Info.plist */,
+				546358871810545B00277EDE /* URXShop-Prefix.pch */,
 				546358841810545200277EDE /* main.m */,
 				4999CBF016DD599900C6C8FC /* en.lproj */,
 			);
@@ -284,14 +281,8 @@
 		4999CBE516DD599900C6C8FC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				546358981810549400277EDE /* PFStoreAppDelegate.h */,
-				546358991810549400277EDE /* PFStoreAppDelegate.m */,
-				546358901810549400277EDE /* PFProducts.h */,
-				546358911810549400277EDE /* PFProducts.m */,
-				546358921810549400277EDE /* PFProductsViewController.h */,
-				546358931810549400277EDE /* PFProductsViewController.m */,
-				546358941810549400277EDE /* PFProductTableViewCell.h */,
-				546358951810549400277EDE /* PFProductTableViewCell.m */,
+				546358981810549400277EDE /* AppDelegate.h */,
+				546358991810549400277EDE /* AppDelegate.m */,
 			);
 			name = Classes;
 			path = Store/Classes;
@@ -449,10 +440,12 @@
 				546358EA181054A700277EDE /* Icon-Small@2x.png in Resources */,
 				546358ED181054A700277EDE /* iconCheckout.png in Resources */,
 				546358F8181054A700277EDE /* shippingHeader@2x.png in Resources */,
+				54A2B99B18109AAF0009C970 /* Development.xcconfig in Resources */,
 				546358EB181054A700277EDE /* Icon.png in Resources */,
 				546358FA181054A700277EDE /* topBarBg@2x.png in Resources */,
 				546358E6181054A700277EDE /* Icon-72@2x.png in Resources */,
 				546358E1181054A700277EDE /* dropdownButton.png in Resources */,
+				54A2B99C18109AAF0009C970 /* Distribution.xcconfig in Resources */,
 				546358EE181054A700277EDE /* iconCheckout@2x.png in Resources */,
 				546358E3181054A700277EDE /* dropdownButtonPressed.png in Resources */,
 				546358FD181054CC00277EDE /* InfoPlist.strings in Resources */,
@@ -487,7 +480,7 @@
 				546358F6181054A700277EDE /* product@2x.png in Resources */,
 				546358CE181054A700277EDE /* arrow.png in Resources */,
 				546358E4181054A700277EDE /* dropdownButtonPressed@2x.png in Resources */,
-				546358881810545B00277EDE /* Store-Info.plist in Resources */,
+				546358881810545B00277EDE /* URXShop-Info.plist in Resources */,
 				546358D0181054A700277EDE /* ButtonBack.png in Resources */,
 				546358DF181054A700277EDE /* Default.png in Resources */,
 			);
@@ -500,12 +493,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5463589D1810549400277EDE /* PFProductsViewController.m in Sources */,
 				5463588B1810547100277EDE /* MBProgressHUD.m in Sources */,
-				5463589C1810549400277EDE /* PFProducts.m in Sources */,
 				546358851810545200277EDE /* main.m in Sources */,
-				5463589E1810549400277EDE /* PFProductTableViewCell.m in Sources */,
-				546358A01810549400277EDE /* PFStoreAppDelegate.m in Sources */,
+				546358A01810549400277EDE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,12 +580,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\\\"$(SRCROOT)/Store/Vendor\\\"",
-					/Users/davidlee/Dropbox/Web_Development/2013/URXShop/URXShop/Vendor,
+					"\\\\\\\"$(SRCROOT)/URXShop/Vendor\\\\\\\"",
+					/Users/davidlee/Dropbox/Web_Development/2013/URXShopWorkspace/URXShop/Vendor,
+					/Users/davidlee/Dropbox/Web_Development/2013/URXShopWorkspace/URXShop/URXShop/Vendor,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "URXShop/Store-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/URXShop/Store-Info.plist";
+				GCC_PREFIX_HEADER = "URXShop/URXShop-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/URXShop/URXShop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "URX Shop";
 				PROVISIONING_PROFILE = "";
@@ -612,12 +603,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\\\"$(SRCROOT)/Store/Vendor\\\"",
-					/Users/davidlee/Dropbox/Web_Development/2013/URXShop/URXShop/Vendor,
+					"\\\\\\\"$(SRCROOT)/URXShop/Vendor\\\\\\\"",
+					/Users/davidlee/Dropbox/Web_Development/2013/URXShopWorkspace/URXShop/Vendor,
+					/Users/davidlee/Dropbox/Web_Development/2013/URXShopWorkspace/URXShop/URXShop/Vendor,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "URXShop/Store-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/URXShop/Store-Info.plist";
+				GCC_PREFIX_HEADER = "URXShop/URXShop-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/URXShop/URXShop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "URX Shop";
 				PROVISIONING_PROFILE = "";

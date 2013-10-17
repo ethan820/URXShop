@@ -5,11 +5,10 @@
 //  Created by Andrew Wang on 2/25/13.
 //
 
-#import "PFProductsViewController.h"
-#import "PFStoreAppDelegate.h"
+#import "AppDelegate.h"
 #import <Turnpike/Turnpike.h>
 
-@implementation PFStoreAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
@@ -19,9 +18,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    UINavigationController *rootController = [[UINavigationController alloc] initWithRootViewController:[[PFProductsViewController alloc] init]];
-    rootController.navigationBar.hidden = YES;
-    self.window.rootViewController = rootController;
+//    UINavigationController *rootController = [[UINavigationController alloc] initWithRootViewController:[[PFProductsViewController alloc] init]];
+//    rootController.navigationBar.hidden = YES;
+//    self.window.rootViewController = rootController;
     
     
     // Turnpike:
@@ -29,15 +28,28 @@
         NSLog(@"Hello World!");
     }];
     
+    [Turnpike mapRoute:@"login" ToDestination:^(TPRouteRequest *request) {
+        NSLog(@"Hello World!");
+    }];
+    
+    [Turnpike mapRoute:@"product/:product_id" ToDestination:^(TPRouteRequest *request) {
+        NSLog(@"Hello World!");
+    }];
+    
+    [Turnpike mapRoute:@"cart" ToDestination:^(TPRouteRequest *request) {
+        NSLog(@"Hello World!");
+    }];
+    
     return YES;
 }
 
-
+// iOS >= 4.2
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     [Turnpike resolveURL:url];
     return YES;
 }
 
+// iOS < 4.2
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     [Turnpike resolveURL:url];
     return YES;
