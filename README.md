@@ -1,7 +1,6 @@
 ## Demo app for URX and Parse integration
 
--Follow this guide to setting up URX end-to-end by, creating a Web app that deeplinks into a simple iOS app.
--Note: This app uses Parse (http://parse.com/) to host the Web app and serverside data for the iOS app.
+-Follow this guide to setting up URX Turnpike end-to-end by, creating a simple Web app that deeplinks into a Turnpike-enabled iOS app.
 
 =======
 
