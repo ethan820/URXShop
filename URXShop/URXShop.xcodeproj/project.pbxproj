@@ -276,6 +276,11 @@
 				CLASSPREFIX = PF;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "URX Inc.";
+				TargetAttributes = {
+					4918FAA616DC4A5400C663F8 = {
+						DevelopmentTeam = 5DK35Y766D;
+					};
+				};
 			};
 			buildConfigurationList = 4918FAA216DC4A5400C663F8 /* Build configuration list for PBXProject "URXShop" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -433,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -452,8 +458,8 @@
 		4918FAC616DC4A5400C663F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
