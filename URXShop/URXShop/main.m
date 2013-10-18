@@ -1,8 +1,8 @@
 //
 //  main.m
-//  Stripe
+//  URXShop
 //
-//  Created by Andrew Wang on 2/25/13.
+//  Created by David Lee on 10/17/13.
 //
 
 #import "AppDelegate.h"

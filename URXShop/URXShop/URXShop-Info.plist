@@ -54,8 +54,8 @@
 	<string>${PARSE_APPLICATION_ID}</string>
 	<key>PARSE_CLIENT_KEY</key>
 	<string>${PARSE_CLIENT_KEY}</string>
-	<key>STRIPE_PUBLISHABLE_KEY</key>
-	<string>${STRIPE_PUBLISHABLE_KEY}</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Storyboard</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
