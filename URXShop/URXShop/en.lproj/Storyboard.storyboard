@@ -37,9 +37,8 @@
         <!--Tab Bar Controller-->
         <scene sceneID="cNK-em-B44">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EJB-fk-bgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController definesPresentationContext="YES" id="Tra-5p-uLL" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="wgz-hi-X37">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -50,13 +49,13 @@
                         <segue destination="Vsi-2I-MUX" kind="relationship" relationship="viewControllers" id="S3W-3O-ePL"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJB-fk-bgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32" y="81"/>
         </scene>
         <!--View Controller - Item 2-->
         <scene sceneID="IwH-lR-kGU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vTZ-DA-sE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Vsi-2I-MUX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KQA-we-BxF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -65,6 +64,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="6DJ-jI-OVV"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTZ-DA-sE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="566" y="407"/>
         </scene>

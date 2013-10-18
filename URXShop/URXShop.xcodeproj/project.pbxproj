@@ -29,6 +29,7 @@
 		5463588B1810547100277EDE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463588A1810547100277EDE /* MBProgressHUD.m */; };
 		546358A01810549400277EDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358991810549400277EDE /* AppDelegate.m */; };
 		546358FD181054CC00277EDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546358FB181054CC00277EDE /* InfoPlist.strings */; };
+		549262A81810B2F000C0547C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549262A71810B2F000C0547C /* Default-568h@2x.png */; };
 		54A2B99818109A6E0009C970 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A2B99718109A6E0009C970 /* Parse.framework */; };
 		54A2B99B18109AAF0009C970 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 54A2B99918109AAF0009C970 /* Development.xcconfig */; };
 		54A2B99C18109AAF0009C970 /* Distribution.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 54A2B99A18109AAF0009C970 /* Distribution.xcconfig */; };
@@ -79,6 +80,7 @@
 		546358981810549400277EDE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = URXShop/Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		546358991810549400277EDE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = URXShop/Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		546358FC181054CC00277EDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = URXShop/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		549262A71810B2F000C0547C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		54A2B99718109A6E0009C970 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = URXShop/Vendor/Parse.framework; sourceTree = "<group>"; };
 		54A2B99918109AAF0009C970 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = SOURCE_ROOT; };
 		54A2B99A18109AAF0009C970 /* Distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Distribution.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -117,6 +119,7 @@
 		4918FA9E16DC4A5400C663F8 = {
 			isa = PBXGroup;
 			children = (
+				549262A71810B2F000C0547C /* Default-568h@2x.png */,
 				540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */,
 				4918FAB016DC4A5400C663F8 /* URXShop */,
 				4918FAA916DC4A5400C663F8 /* Frameworks */,
@@ -307,6 +310,7 @@
 				54A2B99C18109AAF0009C970 /* Distribution.xcconfig in Resources */,
 				546358FD181054CC00277EDE /* InfoPlist.strings in Resources */,
 				546358881810545B00277EDE /* URXShop-Info.plist in Resources */,
+				549262A81810B2F000C0547C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +374,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -396,7 +400,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -419,7 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URXShop/URXShop-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/URXShop/URXShop-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "URX Shop";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -442,7 +446,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URXShop/URXShop-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/URXShop/URXShop-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "URX Shop";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
