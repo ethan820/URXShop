@@ -1,8 +1,8 @@
 //
 //  PFAppDelegate.m
-//  Stripe
+//  URXShop
 //
-//  Created by Andrew Wang on 2/25/13.
+//  Created by David Lee on 10/17/13.
 //
 
 #import "AppDelegate.h"
@@ -12,7 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    [Parse setApplicationId:infoDictionary[@"PARSE_APPLICATION_ID"] clientKey:infoDictionary[@"PARSE_CLIENT_KEY"]];
+    NSLog(@"infoDictionary: %@", infoDictionary);
+    [Parse setApplicationId:@"zIFzjuA3H4AV9W6wUTUCL8wAmkdwknfqsYJ3i1DA"clientKey:@"uYF9AGQhMCbZfKJSYQUye4FQSqk7SLTE11ml540m"];
     
     // Turnpike:
     [Turnpike mapRoute:@"hello" ToDestination:^(TPRouteRequest *request) {
@@ -20,15 +21,15 @@
     }];
     
     [Turnpike mapRoute:@"login" ToDestination:^(TPRouteRequest *request) {
-        NSLog(@"Hello World!");
+        NSLog(@"Hello login!");
     }];
     
     [Turnpike mapRoute:@"product/:product_id" ToDestination:^(TPRouteRequest *request) {
-        NSLog(@"Hello World!");
+        NSLog(@"Hello product_id!");
     }];
     
-    [Turnpike mapRoute:@"cart" ToDestination:^(TPRouteRequest *request) {
-        NSLog(@"Hello World!");
+    [Turnpike mapRoute:@"shoppingCart" ToDestination:^(TPRouteRequest *request) {
+        NSLog(@"Hello shoppingCart!");
     }];
     
     return YES;

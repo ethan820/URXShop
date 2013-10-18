@@ -34,6 +34,9 @@
 		54A2B99B18109AAF0009C970 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 54A2B99918109AAF0009C970 /* Development.xcconfig */; };
 		54A2B99C18109AAF0009C970 /* Distribution.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 54A2B99A18109AAF0009C970 /* Distribution.xcconfig */; };
 		54A2B99F1810A8680009C970 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A2B99D1810A8680009C970 /* Storyboard.storyboard */; };
+		54EE72FA1810D6FC00AA1C9E /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */; };
+		54EE72FF1810D72A00AA1C9E /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE72FE1810D72A00AA1C9E /* ShoppingCartViewController.m */; };
+		54EE73021810D77900AA1C9E /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE73011810D77900AA1C9E /* ProductViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,12 @@
 		54A2B99918109AAF0009C970 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = SOURCE_ROOT; };
 		54A2B99A18109AAF0009C970 /* Distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Distribution.xcconfig; sourceTree = SOURCE_ROOT; };
 		54A2B99E1810A8680009C970 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = URXShop/en.lproj/Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
+		54EE72F81810D6FC00AA1C9E /* ProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductsViewController.h; path = Classes/ProductsViewController.h; sourceTree = SOURCE_ROOT; };
+		54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductsViewController.m; path = Classes/ProductsViewController.m; sourceTree = SOURCE_ROOT; };
+		54EE72FD1810D72A00AA1C9E /* ShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingCartViewController.h; path = Classes/ShoppingCartViewController.h; sourceTree = SOURCE_ROOT; };
+		54EE72FE1810D72A00AA1C9E /* ShoppingCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppingCartViewController.m; path = Classes/ShoppingCartViewController.m; sourceTree = SOURCE_ROOT; };
+		54EE73001810D77900AA1C9E /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductViewController.h; path = Classes/ProductViewController.h; sourceTree = SOURCE_ROOT; };
+		54EE73011810D77900AA1C9E /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductViewController.m; path = Classes/ProductViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +208,12 @@
 			children = (
 				546358981810549400277EDE /* AppDelegate.h */,
 				546358991810549400277EDE /* AppDelegate.m */,
+				54EE72F81810D6FC00AA1C9E /* ProductsViewController.h */,
+				54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */,
+				54EE72FD1810D72A00AA1C9E /* ShoppingCartViewController.h */,
+				54EE72FE1810D72A00AA1C9E /* ShoppingCartViewController.m */,
+				54EE73001810D77900AA1C9E /* ProductViewController.h */,
+				54EE73011810D77900AA1C9E /* ProductViewController.m */,
 			);
 			name = Classes;
 			path = Store/Classes;
@@ -321,8 +336,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EE73021810D77900AA1C9E /* ProductViewController.m in Sources */,
 				5463588B1810547100277EDE /* MBProgressHUD.m in Sources */,
 				546358851810545200277EDE /* main.m in Sources */,
+				54EE72FA1810D6FC00AA1C9E /* ProductsViewController.m in Sources */,
+				54EE72FF1810D72A00AA1C9E /* ShoppingCartViewController.m in Sources */,
 				546358A01810549400277EDE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,9 +434,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\\\\\\\"$(SRCROOT)/URXShop/Vendor\\\\\\\"",
-					/Users/davidlee/Dropbox/Web_Development/2013/URXShopWorkspace/URXShop/Vendor,
-					/Users/davidlee/Dropbox/Web_Development/2013/URXShopWorkspace/URXShop/URXShop/Vendor,
+					"\"$(SRCROOT)/URXShop/Vendor\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URXShop/URXShop-Prefix.pch";
@@ -439,9 +455,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\\\\\\\"$(SRCROOT)/URXShop/Vendor\\\\\\\"",
-					/Users/davidlee/Dropbox/Web_Development/2013/URXShopWorkspace/URXShop/Vendor,
-					/Users/davidlee/Dropbox/Web_Development/2013/URXShopWorkspace/URXShop/URXShop/Vendor,
+					"\"$(SRCROOT)/URXShop/Vendor\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URXShop/URXShop-Prefix.pch";
