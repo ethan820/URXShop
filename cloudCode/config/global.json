@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "URX Shop": {
+            "applicationId": "zIFzjuA3H4AV9W6wUTUCL8wAmkdwknfqsYJ3i1DA", 
+            "masterKey": "axQIL23lQND1U1DQygnR827IlwEVDwFEPKjDtzjn"
+        }, 
+        "_default": {
+            "link": "URX Shop"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.12"
+    }
+}

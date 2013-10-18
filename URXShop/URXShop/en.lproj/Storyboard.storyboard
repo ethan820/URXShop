@@ -20,6 +20,37 @@
             </objects>
             <point key="canvasLocation" x="950" y="-316"/>
         </scene>
+        <!--Shopping Cart View Controller - Shopping Cart-->
+        <scene sceneID="EzQ-K8-mV2">
+            <objects>
+                <tableViewController id="JDh-4z-Vq5" customClass="ShoppingCartViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Me8-Uq-OKz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Shopping Cart" id="7cz-t7-Uzy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ScG-q6-gV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="485"/>
+        </scene>
+        <!--Navigation Controller - Shopping Cart-->
+        <scene sceneID="5dq-CT-c5m">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="X3h-cH-D4D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shopping Cart" id="COg-hr-GYJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3d9-Lo-BvQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JDh-4z-Vq5" kind="relationship" relationship="rootViewController" id="Bfb-z2-fEg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xZ-Yz-WJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="485"/>
+        </scene>
         <!--Navigation Controller - Catalog-->
         <scene sceneID="aOZ-Hi-ZRQ">
             <objects>
@@ -103,31 +134,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="ISH-sh-Ai7" kind="relationship" relationship="viewControllers" id="jns-0m-pvT"/>
-                        <segue destination="jDS-zw-dke" kind="relationship" relationship="viewControllers" id="g0U-YT-fQG"/>
+                        <segue destination="X3h-cH-D4D" kind="relationship" relationship="viewControllers" id="iYM-Q7-p3G"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EJB-fk-bgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32" y="81"/>
-        </scene>
-        <!--Shopping Cart View Controller - Shopping Cart-->
-        <scene sceneID="AwH-Dz-OAu">
-            <objects>
-                <tableViewController id="jDS-zw-dke" customClass="ShoppingCartViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2ct-aX-kOU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="jDS-zw-dke" id="RkA-cV-Zdk"/>
-                            <outlet property="delegate" destination="jDS-zw-dke" id="LXt-7a-0l6"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Shopping Cart" id="Ewy-69-3jr"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K7c-hD-Up5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="566" y="424"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
