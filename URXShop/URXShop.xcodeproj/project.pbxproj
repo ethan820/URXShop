@@ -29,7 +29,7 @@
 		5463588B1810547100277EDE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463588A1810547100277EDE /* MBProgressHUD.m */; };
 		546358A01810549400277EDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358991810549400277EDE /* AppDelegate.m */; };
 		546358FD181054CC00277EDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546358FB181054CC00277EDE /* InfoPlist.strings */; };
-		549262A81810B2F000C0547C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549262A71810B2F000C0547C /* Default-568h@2x.png */; };
+		546F3434181199E60054AF0D /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F3433181199E60054AF0D /* ProductCell.m */; };
 		54A2B99818109A6E0009C970 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A2B99718109A6E0009C970 /* Parse.framework */; };
 		54A2B99B18109AAF0009C970 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 54A2B99918109AAF0009C970 /* Development.xcconfig */; };
 		54A2B99C18109AAF0009C970 /* Distribution.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 54A2B99A18109AAF0009C970 /* Distribution.xcconfig */; };
@@ -83,7 +83,8 @@
 		546358981810549400277EDE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = URXShop/Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		546358991810549400277EDE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = URXShop/Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		546358FC181054CC00277EDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = URXShop/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
-		549262A71810B2F000C0547C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		546F3432181199E60054AF0D /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = Classes/ProductCell.h; sourceTree = SOURCE_ROOT; };
+		546F3433181199E60054AF0D /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = Classes/ProductCell.m; sourceTree = SOURCE_ROOT; };
 		54A2B99718109A6E0009C970 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = URXShop/Vendor/Parse.framework; sourceTree = "<group>"; };
 		54A2B99918109AAF0009C970 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = SOURCE_ROOT; };
 		54A2B99A18109AAF0009C970 /* Distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Distribution.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -128,7 +129,6 @@
 		4918FA9E16DC4A5400C663F8 = {
 			isa = PBXGroup;
 			children = (
-				549262A71810B2F000C0547C /* Default-568h@2x.png */,
 				540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */,
 				4918FAB016DC4A5400C663F8 /* URXShop */,
 				4918FAA916DC4A5400C663F8 /* Frameworks */,
@@ -210,6 +210,8 @@
 				546358991810549400277EDE /* AppDelegate.m */,
 				54EE72F81810D6FC00AA1C9E /* ProductsViewController.h */,
 				54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */,
+				546F3432181199E60054AF0D /* ProductCell.h */,
+				546F3433181199E60054AF0D /* ProductCell.m */,
 				54EE72FD1810D72A00AA1C9E /* ShoppingCartViewController.h */,
 				54EE72FE1810D72A00AA1C9E /* ShoppingCartViewController.m */,
 				54EE73001810D77900AA1C9E /* ProductViewController.h */,
@@ -325,7 +327,6 @@
 				54A2B99C18109AAF0009C970 /* Distribution.xcconfig in Resources */,
 				546358FD181054CC00277EDE /* InfoPlist.strings in Resources */,
 				546358881810545B00277EDE /* URXShop-Info.plist in Resources */,
-				549262A81810B2F000C0547C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +342,7 @@
 				546358851810545200277EDE /* main.m in Sources */,
 				54EE72FA1810D6FC00AA1C9E /* ProductsViewController.m in Sources */,
 				54EE72FF1810D72A00AA1C9E /* ShoppingCartViewController.m in Sources */,
+				546F3434181199E60054AF0D /* ProductCell.m in Sources */,
 				546358A01810549400277EDE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

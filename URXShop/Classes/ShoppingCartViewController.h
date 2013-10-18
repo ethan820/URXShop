@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShoppingCartViewController : UIViewController
+@interface ShoppingCartViewController : PFQueryTableViewController
 
 @end
