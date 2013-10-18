@@ -10,6 +10,8 @@
 
 @interface ProductViewController : UIViewController
 
+@property (nonatomic, strong) PFObject *item;
+
 @property (nonatomic, strong) IBOutlet PFImageView *itemImage;
 @property (nonatomic, strong) IBOutlet UILabel *itemName;
 @property (nonatomic, strong) IBOutlet UILabel *itemPrice;

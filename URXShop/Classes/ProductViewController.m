@@ -14,7 +14,7 @@
 
 @implementation ProductViewController
 
-@synthesize itemImage = _itemImage, itemName = _itemName, itemPrice = _itemPrice, buyButton = _buyButton;
+@synthesize item = _item, itemImage = _itemImage, itemName = _itemName, itemPrice = _itemPrice, buyButton = _buyButton;
 
 -(id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -29,8 +29,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
-        self.edgesForExtendedLayout = UIRectEdgeNone;
+//    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+//        self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    [self configureProduct:self.item];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,7 +47,6 @@
 #pragma mark - Public
 
 - (void)configureProduct:(PFObject *)product {
-    NSLog(@"product here: %@", product);
     self.itemImage.file = (PFFile *)product[@"image"];
     [self.itemImage loadInBackground];
     

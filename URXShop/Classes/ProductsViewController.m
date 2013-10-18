@@ -116,8 +116,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
     ProductViewController *productViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"ProductViewController"];
-
-    [productViewController configureProduct:[self.objects objectAtIndex:indexPath.row]];
+    productViewController.item = [self.objects objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:productViewController animated:NO];
 }
 

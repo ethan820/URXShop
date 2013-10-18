@@ -24,6 +24,7 @@
 		49524E1916E0328D000E08B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1816E0328D000E08B7 /* StoreKit.framework */; };
 		49524E1B16E032A1000E08B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */; };
 		540CE8AA18108E2F00C7FC20 /* libTurnpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540CE8A718108BFF00C7FC20 /* libTurnpike.a */; };
+		5426E9951811DE8A00FE57D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5426E9941811DE8A00FE57D9 /* Default-568h@2x.png */; };
 		546358851810545200277EDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358841810545200277EDE /* main.m */; };
 		546358881810545B00277EDE /* URXShop-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 546358861810545B00277EDE /* URXShop-Info.plist */; };
 		5463588B1810547100277EDE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463588A1810547100277EDE /* MBProgressHUD.m */; };
@@ -75,6 +76,7 @@
 		49524E1816E0328D000E08B7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Turnpike.xcodeproj; path = "../turnpike-ios/Turnpike.xcodeproj"; sourceTree = "<group>"; };
+		5426E9941811DE8A00FE57D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		546358841810545200277EDE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = URXShop/main.m; sourceTree = SOURCE_ROOT; };
 		546358861810545B00277EDE /* URXShop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "URXShop-Info.plist"; path = "URXShop/URXShop-Info.plist"; sourceTree = SOURCE_ROOT; };
 		546358871810545B00277EDE /* URXShop-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "URXShop-Prefix.pch"; path = "URXShop/URXShop-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -224,6 +226,7 @@
 		4999CBEA16DD599900C6C8FC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5426E9941811DE8A00FE57D9 /* Default-568h@2x.png */,
 			);
 			name = Images;
 			path = Store/Resources;
@@ -332,6 +335,7 @@
 				54A2B99C18109AAF0009C970 /* Distribution.xcconfig in Resources */,
 				546358FD181054CC00277EDE /* InfoPlist.strings in Resources */,
 				546358881810545B00277EDE /* URXShop-Info.plist in Resources */,
+				5426E9951811DE8A00FE57D9 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -52,18 +52,13 @@
     CGFloat priceX = self.frame.size.width - self.priceLabel.frame.size.width - ROW_MARGIN - 10.0f;
     self.priceLabel.frame = CGRectMake(priceX, ROW_MARGIN + 10.0f, self.priceLabel.frame.size.width, self.priceLabel.frame.size.height);
     
-    y = self.sizeButton ? 45.0f : 55.0f;
+    y = 55.0f;
     
     [self.textLabel sizeToFit];
     self.textLabel.frame = CGRectMake(x + 2.0f, y, self.textLabel.frame.size.width, self.textLabel.frame.size.height);
     y += self.textLabel.frame.size.height + 2.0f;
     
-    if (self.sizeButton) {
-        self.sizeButton.frame = CGRectMake(x, y, 157.0f, 40.0f);
-        y += self.sizeButton.frame.size.height + 5.0f;
-    } else {
-        y += 6.0f;
-    }
+    y += 6.0f;
     
     self.orderButton.frame = CGRectMake(x, y, 80.0f, 35.0f);
 }
@@ -72,7 +67,6 @@
 
 - (void)prepareForReuse {
     [super prepareForReuse];
-    [self.sizeButton removeFromSuperview];
 }
 
 

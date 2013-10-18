@@ -41,7 +41,7 @@
             UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
             ProductViewController *productViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"ProductViewController"];
             
-            [productViewController configureProduct:[productsViewController.objects objectAtIndex:product_id]];
+            productViewController.item = [productsViewController.objects objectAtIndex:product_id];
             [navigationController pushViewController:productViewController animated:NO];
         }
     }];
