@@ -1,0 +1,28 @@
+body {
+	background: url('../images/website_bg.png') no-repeat left top;
+	/*background-size: 640px 920px;*/
+	background-size: 100%;
+}
+
+a.black_shirt_link {
+	position: absolute;
+	top: 980px;
+	left: 30px;
+	text-align: center;
+	color: #aaa;
+	font-size: 2rem;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: helvetica-neue, sans-serif;
+}
+
+a.shopping_cart_link {
+	position: absolute;
+	top: 1150px;
+	left: 400px;
+	color: #aaa;
+	font-size: 2rem;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: helvetica-neue, sans-serif;
+}

@@ -41,8 +41,11 @@
             UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
             ProductViewController *productViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"ProductViewController"];
             
-            productViewController.item = [productsViewController.objects objectAtIndex:product_id];
-            [navigationController pushViewController:productViewController animated:NO];
+            // Check if the productViewController is already on the stack:
+            if ([[navigationController viewControllers] objectAtIndex:1] != productViewController) {
+                productViewController.item = [productsViewController.objects objectAtIndex:product_id];
+                [navigationController pushViewController:productViewController animated:NO];
+            }
         }
     }];
     
