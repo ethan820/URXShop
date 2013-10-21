@@ -14,7 +14,7 @@
 
 @implementation ProductViewController
 
-@synthesize item = _item, itemImage = _itemImage, itemName = _itemName, itemPrice = _itemPrice, buyButton = _buyButton;
+@synthesize item = _item, itemImage = _itemImage, itemName = _itemName, itemPrice = _itemPrice;
 
 -(id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -28,10 +28,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-//    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
-//        self.edgesForExtendedLayout = UIRectEdgeNone;
-    
+
     [self configureProduct:self.item];
 }
 

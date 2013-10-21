@@ -15,7 +15,6 @@
 @property (nonatomic, strong) IBOutlet PFImageView *itemImage;
 @property (nonatomic, strong) IBOutlet UILabel *itemName;
 @property (nonatomic, strong) IBOutlet UILabel *itemPrice;
-@property (nonatomic, strong) IBOutlet UIButton *buyButton;
 
 - (void)configureProduct:(PFObject *)product;
 

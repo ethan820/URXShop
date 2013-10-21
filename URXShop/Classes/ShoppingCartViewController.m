@@ -22,8 +22,6 @@
     self = [super initWithCoder:aDecoder];
     
     if (self) {
-        // Custom initialization
-        
         // The className to query on
 		self.className = @"Item";
         
@@ -45,13 +43,7 @@
     
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+
     [self.tableView registerClass:[ProductCell class] forCellReuseIdentifier:@"ItemCell"];
 }
 
