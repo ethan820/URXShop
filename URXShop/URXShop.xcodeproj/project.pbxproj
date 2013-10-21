@@ -23,9 +23,9 @@
 		49524E1716E03278000E08B7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1616E03278000E08B7 /* Social.framework */; };
 		49524E1916E0328D000E08B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1816E0328D000E08B7 /* StoreKit.framework */; };
 		49524E1B16E032A1000E08B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */; };
+		5402BAB41815D7130006F3D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5402BAB31815D7130006F3D2 /* Images.xcassets */; };
 		546F207A1814FED6002DCEBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F20791814FED6002DCEBA /* AppDelegate.m */; };
 		546F207D1814FF76002DCEBA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546F207B1814FF76002DCEBA /* Storyboard.storyboard */; };
-		546F20841814FFC3002DCEBA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546F20831814FFC3002DCEBA /* Default-568h@2x.png */; };
 		546F208618150006002DCEBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F208518150005002DCEBA /* main.m */; };
 		546F20891815002A002DCEBA /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 546F20871815002A002DCEBA /* Development.xcconfig */; };
 		546F208A1815002A002DCEBA /* Distribution.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 546F20881815002A002DCEBA /* Distribution.xcconfig */; };
@@ -75,13 +75,13 @@
 		49524E1616E03278000E08B7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		49524E1816E0328D000E08B7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5402BAB31815D7130006F3D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Images/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Turnpike.xcodeproj; path = "../turnpike-ios/Turnpike.xcodeproj"; sourceTree = "<group>"; };
 		546F20781814FED6002DCEBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		546F20791814FED6002DCEBA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		546F207C1814FF76002DCEBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
 		546F207E1814FF85002DCEBA /* URXShop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "URXShop-Info.plist"; sourceTree = SOURCE_ROOT; };
 		546F207F1814FF85002DCEBA /* URXShop-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "URXShop-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		546F20831814FFC3002DCEBA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		546F208518150005002DCEBA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
 		546F20871815002A002DCEBA /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = SOURCE_ROOT; };
 		546F20881815002A002DCEBA /* Distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Distribution.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -208,7 +208,7 @@
 		4999CBEA16DD599900C6C8FC /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				546F20831814FFC3002DCEBA /* Default-568h@2x.png */,
+				5402BAB31815D7130006F3D2 /* Images.xcassets */,
 				546F208E1815051A002DCEBA /* catalog_icon@2x.png */,
 				546F208F1815051A002DCEBA /* shoppingCart_icon@2x.png */,
 			);
@@ -316,9 +316,9 @@
 			files = (
 				546F208A1815002A002DCEBA /* Distribution.xcconfig in Resources */,
 				546F208D18150050002DCEBA /* InfoPlist.strings in Resources */,
+				5402BAB41815D7130006F3D2 /* Images.xcassets in Resources */,
 				546F207D1814FF76002DCEBA /* Storyboard.storyboard in Resources */,
 				546F20901815051A002DCEBA /* catalog_icon@2x.png in Resources */,
-				546F20841814FFC3002DCEBA /* Default-568h@2x.png in Resources */,
 				546F20891815002A002DCEBA /* Development.xcconfig in Resources */,
 				546F20911815051A002DCEBA /* shoppingCart_icon@2x.png in Resources */,
 			);
@@ -425,6 +425,8 @@
 		4918FAC516DC4A5400C663F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -447,6 +449,8 @@
 		4918FAC616DC4A5400C663F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
