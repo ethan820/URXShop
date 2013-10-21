@@ -24,9 +24,6 @@
         self.priceLabel.shadowOffset = CGSizeMake(0.0f, 0.5f);
         self.priceLabel.backgroundColor = [UIColor clearColor];
         [self.contentView addSubview:self.priceLabel];
-        
-        self.orderButton = [[UILabel alloc] initWithFrame:CGRectZero];
-        [self addSubview:self.orderButton];
     }
     return self;
 }
@@ -57,8 +54,6 @@
     y += self.textLabel.frame.size.height + 2.0f;
     
     y += 6.0f;
-    
-    self.orderButton.frame = CGRectMake(x, y, 80.0f, 35.0f);
 }
 
 #pragma mark - UITableViewCell

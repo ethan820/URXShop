@@ -8,7 +8,6 @@
 
 #import "ProductsViewController.h"
 #import "ProductCell.h"
-#import "ProductViewController.h"
 
 #define ROW_HEIGHT 173.0f
 #define SIZE_BUTTON_TAG_OFFSET 1000
@@ -81,8 +80,6 @@
     PFObject *product = self.objects[indexPath.row];
     [cell configureProduct:product];
     
-    cell.orderButton.tag = indexPath.row;
-    
     return cell;
 }
 
@@ -108,8 +105,13 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
     ProductViewController *productViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"ProductViewController"];
-    productViewController.item = [self.objects objectAtIndex:indexPath.row];
-    [self.navigationController pushViewController:productViewController animated:YES];
+    
+    [self presentProductViewController:productViewController withProduct:[self.objects objectAtIndex:indexPath.row]];
+}
+
+-(void)presentProductViewController:(ProductViewController *)viewController withProduct:(PFObject *)product {
+    viewController.item = product;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

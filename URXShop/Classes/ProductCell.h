@@ -10,7 +10,6 @@
 
 @interface ProductCell : PFTableViewCell
 
-@property (nonatomic, strong) UILabel *orderButton;
 @property (nonatomic, strong) UILabel *priceLabel;
 
 - (void)configureProduct:(PFObject *)product;

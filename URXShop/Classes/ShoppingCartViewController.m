@@ -80,8 +80,6 @@
     PFObject *product = self.objects[indexPath.row];
     [cell configureProduct:product];
     
-    cell.orderButton.tag = indexPath.row;
-    
     return cell;
 }
 

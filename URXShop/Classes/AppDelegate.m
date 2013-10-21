@@ -18,7 +18,9 @@
     
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     
-    // Turnpike:
+    
+    
+    // Turnpike Routing:
     [Turnpike mapRoute:@"hello" ToDestination:^(TPRouteRequest *request) {
         NSLog(@"Hello World!");
     }];
@@ -40,11 +42,11 @@
             // Push the ProductViewController:
             UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
             ProductViewController *productViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"ProductViewController"];
-            
+
             // Check if the productViewController is already on the stack:
             if ([[navigationController viewControllers] objectAtIndex:1] != productViewController) {
-                productViewController.item = [productsViewController.objects objectAtIndex:product_id];
-                [navigationController pushViewController:productViewController animated:NO];
+                PFObject *product = [productsViewController.objects objectAtIndex:product_id];
+                [productsViewController presentProductViewController:productViewController withProduct:product];
             }
         }
     }];

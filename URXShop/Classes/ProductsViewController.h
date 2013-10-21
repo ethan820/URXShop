@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProductViewController.h"
 
 @interface ProductsViewController : PFQueryTableViewController
+
+-(void)presentProductViewController:(ProductViewController *)viewController withProduct:(PFObject *)product;
 
 @end
