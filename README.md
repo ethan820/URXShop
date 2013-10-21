@@ -26,7 +26,7 @@ Demo app for URX and Parse integration
 1. Navigate to the Settings/Web hosting tab on Parse.com (i.e.: https://parse.com/apps/urxshop/edit#hosting)
 2. Choose a subdomain for your web app, and enter it in the field "ParseApp Name."
 3. Open a terminal window and navigate to the cloudCode directory in your URXShopWorkspace. Run the command "parse deploy" to deploy your web app code to the Parse server (note: if you haven't already installed the Parse CLI, you'll have to do so first by running "curl -s https://www.parse.com/downloads/cloud_code/installer.sh | sudo /bin/bash". See: https://parse.com/docs/cloud_code_guide).
-4. Open the Safari web browser from your iOS Simulator, and navigate to "your-parseapp-subdomain.parseapp.com." You should see a skeleton URX Shop web app with links to "Buy a Black Shirt," and "See your Shopping Cart."
+4. Open the Safari web browser from your iOS Simulator, and navigate to "your-parseapp-subdomain.parseapp.com." You should see a skeleton URX Shop web app with links to "Buy a Black Shirt" and "See your Shopping Cart."
 5. If you have properly set up the iOS app, when you click either of these links you should see your web browser automatically open up a specific page on the iOS app.
 
 ## Voila! You're done.
