@@ -27,8 +27,6 @@
 		546F207A1814FED6002DCEBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F20791814FED6002DCEBA /* AppDelegate.m */; };
 		546F207D1814FF76002DCEBA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546F207B1814FF76002DCEBA /* Storyboard.storyboard */; };
 		546F208618150006002DCEBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F208518150005002DCEBA /* main.m */; };
-		546F20891815002A002DCEBA /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 546F20871815002A002DCEBA /* Development.xcconfig */; };
-		546F208A1815002A002DCEBA /* Distribution.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 546F20881815002A002DCEBA /* Distribution.xcconfig */; };
 		546F208D18150050002DCEBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546F208B18150050002DCEBA /* InfoPlist.strings */; };
 		546F20901815051A002DCEBA /* catalog_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546F208E1815051A002DCEBA /* catalog_icon@2x.png */; };
 		546F20911815051A002DCEBA /* shoppingCart_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546F208F1815051A002DCEBA /* shoppingCart_icon@2x.png */; };
@@ -83,8 +81,6 @@
 		546F207E1814FF85002DCEBA /* URXShop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "URXShop-Info.plist"; sourceTree = SOURCE_ROOT; };
 		546F207F1814FF85002DCEBA /* URXShop-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "URXShop-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		546F208518150005002DCEBA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
-		546F20871815002A002DCEBA /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = SOURCE_ROOT; };
-		546F20881815002A002DCEBA /* Distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Distribution.xcconfig; sourceTree = SOURCE_ROOT; };
 		546F208C18150050002DCEBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		546F208E1815051A002DCEBA /* catalog_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "catalog_icon@2x.png"; path = "Images/catalog_icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		546F208F1815051A002DCEBA /* shoppingCart_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shoppingCart_icon@2x.png"; path = "Images/shoppingCart_icon@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -174,8 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				546F207B1814FF76002DCEBA /* Storyboard.storyboard */,
-				546F20871815002A002DCEBA /* Development.xcconfig */,
-				546F20881815002A002DCEBA /* Distribution.xcconfig */,
 				4999CBE516DD599900C6C8FC /* Classes */,
 				4999CBEA16DD599900C6C8FC /* Images */,
 				546F207E1814FF85002DCEBA /* URXShop-Info.plist */,
@@ -314,12 +308,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546F208A1815002A002DCEBA /* Distribution.xcconfig in Resources */,
 				546F208D18150050002DCEBA /* InfoPlist.strings in Resources */,
 				5402BAB41815D7130006F3D2 /* Images.xcassets in Resources */,
 				546F207D1814FF76002DCEBA /* Storyboard.storyboard in Resources */,
 				546F20901815051A002DCEBA /* catalog_icon@2x.png in Resources */,
-				546F20891815002A002DCEBA /* Development.xcconfig in Resources */,
 				546F20911815051A002DCEBA /* shoppingCart_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

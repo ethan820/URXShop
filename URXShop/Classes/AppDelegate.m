@@ -13,8 +13,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    [Parse setApplicationId:@"zIFzjuA3H4AV9W6wUTUCL8wAmkdwknfqsYJ3i1DA"clientKey:@"uYF9AGQhMCbZfKJSYQUye4FQSqk7SLTE11ml540m"];
+    [Parse setApplicationId:@"YourParseApplicationID"clientKey:@"YourParseClientAPIKey"];
     
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     
