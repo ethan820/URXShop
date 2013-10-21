@@ -18,7 +18,7 @@ Demo app for URX and Parse integration
 
 ## Get your iOS app up and running
 
-1. Add the Parse Application ID and Parse Client API key to /Store/Resources/Development.xcconfig and /Store/Resources/Distribution.xcconfig
+1. Replace "YourParseApplicationID" and "YourParseClientAPIKey" in AppDelegate.m with your own Parse app credentials.
 2. In XCode, choose Clean from the Product menu.
 3. Checkpoint: run your app in the simulator; you should see the products via your app. You cannot buy yet.
 
