@@ -24,16 +24,16 @@
 		49524E1916E0328D000E08B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1816E0328D000E08B7 /* StoreKit.framework */; };
 		49524E1B16E032A1000E08B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */; };
 		540CE8AA18108E2F00C7FC20 /* libTurnpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540CE8A718108BFF00C7FC20 /* libTurnpike.a */; };
-		5426E9951811DE8A00FE57D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5426E9941811DE8A00FE57D9 /* Default-568h@2x.png */; };
-		546358851810545200277EDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358841810545200277EDE /* main.m */; };
-		546358881810545B00277EDE /* URXShop-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 546358861810545B00277EDE /* URXShop-Info.plist */; };
-		546358A01810549400277EDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546358991810549400277EDE /* AppDelegate.m */; };
-		546358FD181054CC00277EDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546358FB181054CC00277EDE /* InfoPlist.strings */; };
-		546F20761814FC0E002DCEBA /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 546F20741814FC0E002DCEBA /* Development.xcconfig */; };
-		546F20771814FC0E002DCEBA /* Distribution.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 546F20751814FC0E002DCEBA /* Distribution.xcconfig */; };
+		546F207A1814FED6002DCEBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F20791814FED6002DCEBA /* AppDelegate.m */; };
+		546F207D1814FF76002DCEBA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546F207B1814FF76002DCEBA /* Storyboard.storyboard */; };
+		546F20801814FF85002DCEBA /* URXShop-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 546F207E1814FF85002DCEBA /* URXShop-Info.plist */; };
+		546F20841814FFC3002DCEBA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546F20831814FFC3002DCEBA /* Default-568h@2x.png */; };
+		546F208618150006002DCEBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F208518150005002DCEBA /* main.m */; };
+		546F20891815002A002DCEBA /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 546F20871815002A002DCEBA /* Development.xcconfig */; };
+		546F208A1815002A002DCEBA /* Distribution.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 546F20881815002A002DCEBA /* Distribution.xcconfig */; };
+		546F208D18150050002DCEBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546F208B18150050002DCEBA /* InfoPlist.strings */; };
 		546F3434181199E60054AF0D /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F3433181199E60054AF0D /* ProductCell.m */; };
 		54A2B99818109A6E0009C970 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A2B99718109A6E0009C970 /* Parse.framework */; };
-		54A2B99F1810A8680009C970 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A2B99D1810A8680009C970 /* Storyboard.storyboard */; };
 		54EE72FA1810D6FC00AA1C9E /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */; };
 		54EE72FF1810D72A00AA1C9E /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE72FE1810D72A00AA1C9E /* ShoppingCartViewController.m */; };
 		54EE73021810D77900AA1C9E /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE73011810D77900AA1C9E /* ProductViewController.m */; };
@@ -75,19 +75,19 @@
 		49524E1816E0328D000E08B7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Turnpike.xcodeproj; path = "../turnpike-ios/Turnpike.xcodeproj"; sourceTree = "<group>"; };
-		5426E9941811DE8A00FE57D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
-		546358841810545200277EDE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = URXShop/main.m; sourceTree = SOURCE_ROOT; };
-		546358861810545B00277EDE /* URXShop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "URXShop-Info.plist"; path = "URXShop/URXShop-Info.plist"; sourceTree = SOURCE_ROOT; };
-		546358871810545B00277EDE /* URXShop-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "URXShop-Prefix.pch"; path = "URXShop/URXShop-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		546358981810549400277EDE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = URXShop/Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		546358991810549400277EDE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = URXShop/Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		546358FC181054CC00277EDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = URXShop/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
-		546F20741814FC0E002DCEBA /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = URXShop/Development.xcconfig; sourceTree = SOURCE_ROOT; };
-		546F20751814FC0E002DCEBA /* Distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Distribution.xcconfig; path = URXShop/Distribution.xcconfig; sourceTree = SOURCE_ROOT; };
+		546F20781814FED6002DCEBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		546F20791814FED6002DCEBA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		546F207C1814FF76002DCEBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
+		546F207E1814FF85002DCEBA /* URXShop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "URXShop-Info.plist"; sourceTree = SOURCE_ROOT; };
+		546F207F1814FF85002DCEBA /* URXShop-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "URXShop-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		546F20831814FFC3002DCEBA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		546F208518150005002DCEBA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		546F20871815002A002DCEBA /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = SOURCE_ROOT; };
+		546F20881815002A002DCEBA /* Distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Distribution.xcconfig; sourceTree = SOURCE_ROOT; };
+		546F208C18150050002DCEBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		546F3432181199E60054AF0D /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = Classes/ProductCell.h; sourceTree = SOURCE_ROOT; };
 		546F3433181199E60054AF0D /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = Classes/ProductCell.m; sourceTree = SOURCE_ROOT; };
 		54A2B99718109A6E0009C970 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = URXShop/Vendor/Parse.framework; sourceTree = "<group>"; };
-		54A2B99E1810A8680009C970 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = URXShop/en.lproj/Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
 		54EE72F81810D6FC00AA1C9E /* ProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductsViewController.h; path = Classes/ProductsViewController.h; sourceTree = SOURCE_ROOT; };
 		54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductsViewController.m; path = Classes/ProductsViewController.m; sourceTree = SOURCE_ROOT; };
 		54EE72FD1810D72A00AA1C9E /* ShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingCartViewController.h; path = Classes/ShoppingCartViewController.h; sourceTree = SOURCE_ROOT; };
@@ -128,9 +128,9 @@
 		4918FA9E16DC4A5400C663F8 = {
 			isa = PBXGroup;
 			children = (
-				540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */,
 				4918FAB016DC4A5400C663F8 /* URXShop */,
 				4918FAA916DC4A5400C663F8 /* Frameworks */,
+				540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */,
 				4918FAA816DC4A5400C663F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,14 +170,14 @@
 		4918FAB016DC4A5400C663F8 /* URXShop */ = {
 			isa = PBXGroup;
 			children = (
-				546F20741814FC0E002DCEBA /* Development.xcconfig */,
-				546F20751814FC0E002DCEBA /* Distribution.xcconfig */,
-				54A2B99D1810A8680009C970 /* Storyboard.storyboard */,
+				546F207B1814FF76002DCEBA /* Storyboard.storyboard */,
+				546F20871815002A002DCEBA /* Development.xcconfig */,
+				546F20881815002A002DCEBA /* Distribution.xcconfig */,
 				4999CBE516DD599900C6C8FC /* Classes */,
 				4999CBEA16DD599900C6C8FC /* Images */,
-				546358861810545B00277EDE /* URXShop-Info.plist */,
-				546358871810545B00277EDE /* URXShop-Prefix.pch */,
-				546358841810545200277EDE /* main.m */,
+				546F207E1814FF85002DCEBA /* URXShop-Info.plist */,
+				546F207F1814FF85002DCEBA /* URXShop-Prefix.pch */,
+				546F208518150005002DCEBA /* main.m */,
 				4999CBF016DD599900C6C8FC /* en.lproj */,
 			);
 			name = URXShop;
@@ -187,8 +187,8 @@
 		4999CBE516DD599900C6C8FC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				546358981810549400277EDE /* AppDelegate.h */,
-				546358991810549400277EDE /* AppDelegate.m */,
+				546F20781814FED6002DCEBA /* AppDelegate.h */,
+				546F20791814FED6002DCEBA /* AppDelegate.m */,
 				54EE72F81810D6FC00AA1C9E /* ProductsViewController.h */,
 				54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */,
 				546F3432181199E60054AF0D /* ProductCell.h */,
@@ -205,7 +205,7 @@
 		4999CBEA16DD599900C6C8FC /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				5426E9941811DE8A00FE57D9 /* Default-568h@2x.png */,
+				546F20831814FFC3002DCEBA /* Default-568h@2x.png */,
 			);
 			name = Images;
 			path = Store/Resources;
@@ -214,7 +214,7 @@
 		4999CBF016DD599900C6C8FC /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				546358FB181054CC00277EDE /* InfoPlist.strings */,
+				546F208B18150050002DCEBA /* InfoPlist.strings */,
 			);
 			name = en.lproj;
 			path = Store/en.lproj;
@@ -309,12 +309,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546F20771814FC0E002DCEBA /* Distribution.xcconfig in Resources */,
-				54A2B99F1810A8680009C970 /* Storyboard.storyboard in Resources */,
-				546358FD181054CC00277EDE /* InfoPlist.strings in Resources */,
-				546358881810545B00277EDE /* URXShop-Info.plist in Resources */,
-				5426E9951811DE8A00FE57D9 /* Default-568h@2x.png in Resources */,
-				546F20761814FC0E002DCEBA /* Development.xcconfig in Resources */,
+				546F208A1815002A002DCEBA /* Distribution.xcconfig in Resources */,
+				546F208D18150050002DCEBA /* InfoPlist.strings in Resources */,
+				546F20801814FF85002DCEBA /* URXShop-Info.plist in Resources */,
+				546F207D1814FF76002DCEBA /* Storyboard.storyboard in Resources */,
+				546F20841814FFC3002DCEBA /* Default-568h@2x.png in Resources */,
+				546F20891815002A002DCEBA /* Development.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,31 +326,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				54EE73021810D77900AA1C9E /* ProductViewController.m in Sources */,
-				546358851810545200277EDE /* main.m in Sources */,
+				546F207A1814FED6002DCEBA /* AppDelegate.m in Sources */,
 				54EE72FA1810D6FC00AA1C9E /* ProductsViewController.m in Sources */,
 				54EE72FF1810D72A00AA1C9E /* ShoppingCartViewController.m in Sources */,
+				546F208618150006002DCEBA /* main.m in Sources */,
 				546F3434181199E60054AF0D /* ProductCell.m in Sources */,
-				546358A01810549400277EDE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		546358FB181054CC00277EDE /* InfoPlist.strings */ = {
+		546F207B1814FF76002DCEBA /* Storyboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				546358FC181054CC00277EDE /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		54A2B99D1810A8680009C970 /* Storyboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54A2B99E1810A8680009C970 /* en */,
+				546F207C1814FF76002DCEBA /* en */,
 			);
 			name = Storyboard.storyboard;
+			sourceTree = "<group>";
+		};
+		546F208B18150050002DCEBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				546F208C18150050002DCEBA /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -424,11 +424,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\"$(SRCROOT)/URXShop/Vendor\"",
+					"\"$(SRCROOT)/Vendor\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "URXShop/URXShop-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/URXShop/URXShop-Info.plist";
+				GCC_PREFIX_HEADER = "URXShop-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/URXShop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "URX Shop";
 				PROVISIONING_PROFILE = "";
@@ -445,11 +445,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\"$(SRCROOT)/URXShop/Vendor\"",
+					"\"$(SRCROOT)/Vendor\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "URXShop/URXShop-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/URXShop/URXShop-Info.plist";
+				GCC_PREFIX_HEADER = "URXShop-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/URXShop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "URX Shop";
 				PROVISIONING_PROFILE = "";
