@@ -33,6 +33,10 @@
         
 		// The number of objects to show per page
 		self.objectsPerPage = 5;
+        
+        // Set the tabBarItem icon:
+        UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Catalog" image:[UIImage imageNamed:@"catalog_icon.png"] tag:0];
+        self.tabBarItem = tabBarItem;
     }
     return self;
 }
@@ -45,6 +49,15 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
     
     [self.tableView registerClass:[ProductCell class] forCellReuseIdentifier:@"ItemCell"];
+    
+    // Add observer for NSNotification:
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selectProductWithNotification:) name:@"com.urx.shop.productsViewController.urxLinkToProduct" object:nil];
+}
+
+- (void)viewDidUnload
+{
+    // Remove NSNotification:
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"com.urx.shop.productsViewController.urxLinkToProduct" object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -98,20 +111,35 @@
     return [self.objects count];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     return ROW_HEIGHT;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-    ProductViewController *productViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"ProductViewController"];
-    
-    [self presentProductViewController:productViewController withProduct:[self.objects objectAtIndex:indexPath.row]];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self selectProduct:[self.objects objectAtIndex:indexPath.row]];
 }
 
--(void)presentProductViewController:(ProductViewController *)viewController withProduct:(PFObject *)product {
-    viewController.item = product;
-    [self.navigationController pushViewController:viewController animated:YES];
+
+#pragma mark - NSNotification handler
+- (void)selectProductWithNotification:(NSNotification *)notification
+{
+    NSDictionary *dict = [notification userInfo];
+    NSInteger product_id = [[dict objectForKey:@"product_id"] intValue];
+    NSIndexPath *path = [NSIndexPath indexPathForRow:product_id inSection:0];
+    [self selectProduct:[self.objects objectAtIndex:path.row]];
 }
+
+
+#pragma mark - Load ProductViewController:
+- (void)selectProduct:(PFObject *)product
+{
+    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    ProductViewController *productViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"ProductViewController"];
+    productViewController.item = product;
+    [self.navigationController pushViewController:productViewController animated:YES];
+}
+
 
 @end

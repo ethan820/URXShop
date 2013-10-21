@@ -30,30 +30,18 @@
     }];
     
     [Turnpike mapRoute:@"product/:product_id" ToDestination:^(TPRouteRequest *request) {
-        NSInteger product_id = [[request.routeParameters valueForKey:@"product_id"] intValue];
-
+        NSString *product_id = [request.routeParameters valueForKey:@"product_id"];
         if (product_id) {
             [tabBarController setSelectedIndex:0];
-            
-            // Retrieve the ProductsViewController:
-            UINavigationController *navigationController = [[tabBarController viewControllers] objectAtIndex:0];
-            ProductsViewController *productsViewController = [[navigationController viewControllers] objectAtIndex:0];
-            
-            // Push the ProductViewController:
-            UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-            ProductViewController *productViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"ProductViewController"];
-
-            // Check if the productViewController is already on the stack:
-            if ([[navigationController viewControllers] objectAtIndex:1] != productViewController) {
-                PFObject *product = [productsViewController.objects objectAtIndex:product_id];
-                [productsViewController presentProductViewController:productViewController withProduct:product];
-            }
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"com.urx.shop.productsViewController.urxLinkToProduct" object:nil userInfo:[NSDictionary dictionaryWithObject:product_id forKey:@"product_id"]];
         }
     }];
     
     [Turnpike mapRoute:@"shopping_cart" ToDestination:^(TPRouteRequest *request) {
         [tabBarController setSelectedIndex:1];
     }];
+    
+    
     
     return YES;
 }

@@ -11,6 +11,4 @@
 
 @interface ProductsViewController : PFQueryTableViewController
 
--(void)presentProductViewController:(ProductViewController *)viewController withProduct:(PFObject *)product;
-
 @end

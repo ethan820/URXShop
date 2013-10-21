@@ -33,6 +33,10 @@
         
 		// The number of objects to show per page
 		self.objectsPerPage = 1;
+        
+        // Set the tabBarItem icon:
+        UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Catalog" image:[UIImage imageNamed:@"shoppingCart_icon.png"] tag:1];
+        self.tabBarItem = tabBarItem;
     }
     return self;
 }
