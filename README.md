@@ -3,7 +3,7 @@ URXShop
 
 Demo app for URX and Parse integration
 
-Parse is a cloud hosting platform that provides one convenient backend for mobile and web apps. We use it here to serve a mobile website and server-side data for the iPhone app in one place. Follow this guide to setting up URX turnpike-ios router end-to-end by, creating a simple Web app that deeplinks into a Turnpike-enabled iOS app.
+Parse is a cloud hosting platform that provides one convenient backend for both mobile and web apps at the same time. We use it here to create a simple web app that deeplinks into a Turnpike-enabled iOS app. Follow this guide to setting up URX turnpike-ios router end-to-end.
 
 =======
 
