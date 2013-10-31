@@ -30,30 +30,13 @@
 		546F208D18150050002DCEBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546F208B18150050002DCEBA /* InfoPlist.strings */; };
 		546F20901815051A002DCEBA /* catalog_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546F208E1815051A002DCEBA /* catalog_icon@2x.png */; };
 		546F20911815051A002DCEBA /* shoppingCart_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546F208F1815051A002DCEBA /* shoppingCart_icon@2x.png */; };
-		546F20921815090E002DCEBA /* libTurnpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540CE8A718108BFF00C7FC20 /* libTurnpike.a */; };
 		546F20941815092F002DCEBA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546F20931815092F002DCEBA /* Parse.framework */; };
 		546F3434181199E60054AF0D /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F3433181199E60054AF0D /* ProductCell.m */; };
+		54B4A8CC182303E100AD17E9 /* libTurnpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B4A8CB182303E100AD17E9 /* libTurnpike.a */; };
 		54EE72FA1810D6FC00AA1C9E /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */; };
 		54EE72FF1810D72A00AA1C9E /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE72FE1810D72A00AA1C9E /* ShoppingCartViewController.m */; };
 		54EE73021810D77900AA1C9E /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE73011810D77900AA1C9E /* ProductViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		540CE8A618108BFF00C7FC20 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ACFED1811787304800AD1920;
-			remoteInfo = Turnpike;
-		};
-		540CE8A818108BFF00C7FC20 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ACFED1921787304800AD1920;
-			remoteInfo = TurnpikeTests;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4918FAA716DC4A5400C663F8 /* URX Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URX Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +57,6 @@
 		49524E1816E0328D000E08B7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5402BAB31815D7130006F3D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Images/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Turnpike.xcodeproj; path = "../turnpike-ios/Turnpike.xcodeproj"; sourceTree = "<group>"; };
 		546F20781814FED6002DCEBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		546F20791814FED6002DCEBA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		546F207C1814FF76002DCEBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
@@ -87,6 +69,7 @@
 		546F20931815092F002DCEBA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Vendor/Parse.framework; sourceTree = "<group>"; };
 		546F3432181199E60054AF0D /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = Classes/ProductCell.h; sourceTree = SOURCE_ROOT; };
 		546F3433181199E60054AF0D /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = Classes/ProductCell.m; sourceTree = SOURCE_ROOT; };
+		54B4A8CB182303E100AD17E9 /* libTurnpike.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTurnpike.a; path = "../../../../../Library/Developer/Xcode/DerivedData/URXShopWorkspace-grecyqzmgdgfvyddvbwslkhpauws/Build/Products/Debug-iphoneos/libTurnpike.a"; sourceTree = "<group>"; };
 		54EE72F81810D6FC00AA1C9E /* ProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductsViewController.h; path = Classes/ProductsViewController.h; sourceTree = SOURCE_ROOT; };
 		54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductsViewController.m; path = Classes/ProductsViewController.m; sourceTree = SOURCE_ROOT; };
 		54EE72FD1810D72A00AA1C9E /* ShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingCartViewController.h; path = Classes/ShoppingCartViewController.h; sourceTree = SOURCE_ROOT; };
@@ -100,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546F20921815090E002DCEBA /* libTurnpike.a in Frameworks */,
+				54B4A8CC182303E100AD17E9 /* libTurnpike.a in Frameworks */,
 				49524E1B16E032A1000E08B7 /* SystemConfiguration.framework in Frameworks */,
 				49524E1916E0328D000E08B7 /* StoreKit.framework in Frameworks */,
 				49524E1716E03278000E08B7 /* Social.framework in Frameworks */,
@@ -129,7 +112,6 @@
 			children = (
 				4918FAB016DC4A5400C663F8 /* URXShop */,
 				4918FAA916DC4A5400C663F8 /* Frameworks */,
-				540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */,
 				4918FAA816DC4A5400C663F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,6 +127,7 @@
 		4918FAA916DC4A5400C663F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54B4A8CB182303E100AD17E9 /* libTurnpike.a */,
 				546F20931815092F002DCEBA /* Parse.framework */,
 				49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */,
 				49524E1816E0328D000E08B7 /* StoreKit.framework */,
@@ -172,10 +155,7 @@
 				546F207B1814FF76002DCEBA /* Storyboard.storyboard */,
 				4999CBE516DD599900C6C8FC /* Classes */,
 				4999CBEA16DD599900C6C8FC /* Images */,
-				546F207E1814FF85002DCEBA /* URXShop-Info.plist */,
-				546F207F1814FF85002DCEBA /* URXShop-Prefix.pch */,
-				546F208518150005002DCEBA /* main.m */,
-				4999CBF016DD599900C6C8FC /* en.lproj */,
+				54B4A8C81822DAE900AD17E9 /* Supporting Files */,
 			);
 			name = URXShop;
 			path = Store;
@@ -210,22 +190,15 @@
 			path = Store/Resources;
 			sourceTree = SOURCE_ROOT;
 		};
-		4999CBF016DD599900C6C8FC /* en.lproj */ = {
+		54B4A8C81822DAE900AD17E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				546F208B18150050002DCEBA /* InfoPlist.strings */,
+				546F207E1814FF85002DCEBA /* URXShop-Info.plist */,
+				546F207F1814FF85002DCEBA /* URXShop-Prefix.pch */,
+				546F208518150005002DCEBA /* main.m */,
 			);
-			name = en.lproj;
-			path = Store/en.lproj;
-			sourceTree = SOURCE_ROOT;
-		};
-		540CE8A218108BFF00C7FC20 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				540CE8A718108BFF00C7FC20 /* libTurnpike.a */,
-				540CE8A918108BFF00C7FC20 /* TurnpikeTests.octest */,
-			);
-			name = Products;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,35 +246,12 @@
 			mainGroup = 4918FA9E16DC4A5400C663F8;
 			productRefGroup = 4918FAA816DC4A5400C663F8 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 540CE8A218108BFF00C7FC20 /* Products */;
-					ProjectRef = 540CE8A118108BFF00C7FC20 /* Turnpike.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				4918FAA616DC4A5400C663F8 /* URXShop */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		540CE8A718108BFF00C7FC20 /* libTurnpike.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libTurnpike.a;
-			remoteRef = 540CE8A618108BFF00C7FC20 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		540CE8A918108BFF00C7FC20 /* TurnpikeTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = TurnpikeTests.octest;
-			remoteRef = 540CE8A818108BFF00C7FC20 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4918FAA516DC4A5400C663F8 /* Resources */ = {
@@ -349,6 +299,7 @@
 				546F208C18150050002DCEBA /* en */,
 			);
 			name = InfoPlist.strings;
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,6 +382,10 @@
 				GCC_PREFIX_HEADER = "URXShop-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/URXShop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/URXShopWorkspace-grecyqzmgdgfvyddvbwslkhpauws/Build/Products/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "URX Shop";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -455,6 +410,10 @@
 				GCC_PREFIX_HEADER = "URXShop-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/URXShop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/URXShopWorkspace-grecyqzmgdgfvyddvbwslkhpauws/Build/Products/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "URX Shop";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
