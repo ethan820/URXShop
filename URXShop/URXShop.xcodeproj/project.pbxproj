@@ -32,7 +32,6 @@
 		546F20911815051A002DCEBA /* shoppingCart_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546F208F1815051A002DCEBA /* shoppingCart_icon@2x.png */; };
 		546F20941815092F002DCEBA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546F20931815092F002DCEBA /* Parse.framework */; };
 		546F3434181199E60054AF0D /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F3433181199E60054AF0D /* ProductCell.m */; };
-		54B4A8CC182303E100AD17E9 /* libTurnpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B4A8CB182303E100AD17E9 /* libTurnpike.a */; };
 		54EE72FA1810D6FC00AA1C9E /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */; };
 		54EE72FF1810D72A00AA1C9E /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE72FE1810D72A00AA1C9E /* ShoppingCartViewController.m */; };
 		54EE73021810D77900AA1C9E /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE73011810D77900AA1C9E /* ProductViewController.m */; };
@@ -83,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B4A8CC182303E100AD17E9 /* libTurnpike.a in Frameworks */,
 				49524E1B16E032A1000E08B7 /* SystemConfiguration.framework in Frameworks */,
 				49524E1916E0328D000E08B7 /* StoreKit.framework in Frameworks */,
 				49524E1716E03278000E08B7 /* Social.framework in Frameworks */,
@@ -334,7 +332,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "../turnpike-ios/Turnpike";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -360,7 +358,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "../turnpike-ios/Turnpike";
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -389,6 +387,7 @@
 				PRODUCT_NAME = "URX Shop";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -418,6 +417,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

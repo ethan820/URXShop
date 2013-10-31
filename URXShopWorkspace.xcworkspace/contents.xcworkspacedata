@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:turnpike-ios/Turnpike.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:URXShop/URXShop.xcodeproj">
    </FileRef>
 </Workspace>
