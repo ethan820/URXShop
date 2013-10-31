@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-
+    
     [self configureProduct:self.item];
 }
 
@@ -44,7 +44,9 @@
 #pragma mark - Public
 
 - (void)configureProduct:(PFObject *)product {
+
     self.itemImage.file = (PFFile *)product[@"image"];
+    self.itemImage.contentMode = UIViewContentModeScaleAspectFit;
     [self.itemImage loadInBackground];
     
     self.itemPrice.text = [NSString stringWithFormat:@"$%d", [product[@"price"] intValue]];
