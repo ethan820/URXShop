@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Tra-5p-uLL">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Products View Controller - URX Shop-->
+        <scene sceneID="xPf-iY-OXJ">
+            <objects>
+                <tableViewController id="Laq-p5-QMU" customClass="ProductsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Mbx-ET-dWA">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="URX Shop" id="cRH-B5-igH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJc-fL-hRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="-316"/>
+        </scene>
+        <!--Shopping Cart View Controller - Shopping Cart-->
+        <scene sceneID="EzQ-K8-mV2">
+            <objects>
+                <tableViewController id="JDh-4z-Vq5" customClass="ShoppingCartViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Me8-Uq-OKz">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Shopping Cart" id="7cz-t7-Uzy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ScG-q6-gV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="485"/>
+        </scene>
+        <!--Navigation Controller - Shopping Cart-->
+        <scene sceneID="5dq-CT-c5m">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="X3h-cH-D4D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shopping Cart" id="COg-hr-GYJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="3d9-Lo-BvQ">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JDh-4z-Vq5" kind="relationship" relationship="rootViewController" id="Bfb-z2-fEg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xZ-Yz-WJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="485"/>
+        </scene>
+        <!--Navigation Controller - Catalog-->
+        <scene sceneID="aOZ-Hi-ZRQ">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ISH-sh-Ai7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Catalog" id="1Bm-lG-WBt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="8vn-cX-X9V">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Laq-p5-QMU" kind="relationship" relationship="rootViewController" id="gsu-Qe-EUK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPu-7f-GQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="-316"/>
+        </scene>
+        <!--Product View Controller-->
+        <scene sceneID="Hgg-XW-ebK">
+            <objects>
+                <viewController storyboardIdentifier="ProductViewController" id="7K4-o0-CSD" customClass="ProductViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BNe-Py-v0V">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="smN-6r-uAf" customClass="PFImageView">
+                                <rect key="frame" x="10" y="13" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.87450980389999999" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AHw-A4-PVb">
+                                <rect key="frame" x="15" y="321" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Snx-18-QkJ">
+                                <rect key="frame" x="264" y="321" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RmS-As-0lM"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="itemImage" destination="smN-6r-uAf" id="zsr-Ta-PTe"/>
+                        <outlet property="itemName" destination="AHw-A4-PVb" id="ENK-VQ-Iko"/>
+                        <outlet property="itemPrice" destination="Snx-18-QkJ" id="eCw-QW-pVW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOa-Iy-KCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1331" y="-316"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cNK-em-B44">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="Tra-5p-uLL" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="wgz-hi-X37">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ISH-sh-Ai7" kind="relationship" relationship="viewControllers" id="jns-0m-pvT"/>
+                        <segue destination="X3h-cH-D4D" kind="relationship" relationship="viewControllers" id="iYM-Q7-p3G"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJB-fk-bgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="81"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
