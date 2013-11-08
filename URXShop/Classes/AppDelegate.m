@@ -19,15 +19,14 @@
     
     
     
-    // Turnpike Routing:
+    /******************** Begin URX Turnpike Routing: ********************/
+    
+    // Hello word:
     [Turnpike mapRoute:@"hello" ToDestination:^(TPRouteRequest *request) {
         NSLog(@"Hello World!");
     }];
     
-    [Turnpike mapRoute:@"login" ToDestination:^(TPRouteRequest *request) {
-        [tabBarController setSelectedIndex:0];
-    }];
-    
+    // Product detail page
     [Turnpike mapRoute:@"product/:product_id" ToDestination:^(TPRouteRequest *request) {
         NSString *product_id = [request.routeParameters valueForKey:@"product_id"];
         if (product_id) {
@@ -36,11 +35,20 @@
         }
     }];
     
-    [Turnpike mapRoute:@"shopping_cart" ToDestination:^(TPRouteRequest *request) {
-        [tabBarController setSelectedIndex:1];
+    // Catalog or Shopping cart tabs:
+    [Turnpike mapRoute:@"tab/:tab_name" ToDestination:^(TPRouteRequest *request) {
+        int tabIndexToSet = 0;
+        if ([[request.routeParameters valueForKey:@"tab_name"] isEqualToString:@"catalog"]) {
+            tabIndexToSet = 0;
+        } else if ([[request.routeParameters valueForKey:@"tab_name"] isEqualToString:@"shopping_cart"]) {
+            tabIndexToSet = 1;
+        } else {
+            // open some other tab, etc.
+            tabIndexToSet = 0;
+        }
+        
+        [tabBarController setSelectedIndex:tabIndexToSet];
     }];
-    
-    
     
     return YES;
 }
