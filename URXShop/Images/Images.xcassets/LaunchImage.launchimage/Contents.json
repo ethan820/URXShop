@@ -5,14 +5,14 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "default.png",
+      "filename" : "Default@2x~iphone.png",
       "scale" : "2x"
     },
     {
       "extent" : "full-screen",
       "idiom" : "iphone",
       "subtype" : "retina4",
-      "filename" : "default@2x.png",
+      "filename" : "Default-568h@2x~iphone.png",
       "minimum-system-version" : "7.0",
       "orientation" : "portrait",
       "scale" : "2x"
@@ -22,6 +22,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "Default-Portrait~ipad.png",
       "scale" : "1x"
     },
     {
@@ -29,6 +30,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "Default-Landscape~ipad.png",
       "scale" : "1x"
     },
     {
@@ -36,6 +38,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "Default-568h-Portrait@2x~ipad-1.png",
       "scale" : "2x"
     },
     {
@@ -43,6 +46,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "Default-568h-Landscape@2x~ipad.png",
       "scale" : "2x"
     },
     {
@@ -55,12 +59,14 @@
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
+      "filename" : "Default@2x~iphone-1.png",
       "scale" : "2x"
     },
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
+      "filename" : "Default-568h@2x~iphone-1.png",
       "subtype" : "retina4",
       "scale" : "2x"
     },
@@ -74,6 +80,7 @@
       "orientation" : "portrait",
       "idiom" : "ipad",
       "extent" : "full-screen",
+      "filename" : "Default-Portrait~ipad-1.png",
       "scale" : "1x"
     },
     {
@@ -86,6 +93,7 @@
       "orientation" : "landscape",
       "idiom" : "ipad",
       "extent" : "full-screen",
+      "filename" : "Default-Landscape~ipad-1.png",
       "scale" : "1x"
     },
     {
@@ -98,6 +106,7 @@
       "orientation" : "portrait",
       "idiom" : "ipad",
       "extent" : "full-screen",
+      "filename" : "Default-568h-Portrait@2x~ipad.png",
       "scale" : "2x"
     },
     {
@@ -110,6 +119,7 @@
       "orientation" : "landscape",
       "idiom" : "ipad",
       "extent" : "full-screen",
+      "filename" : "Default-568h-Landscape@2x~ipad-1.png",
       "scale" : "2x"
     }
   ],
