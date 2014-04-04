@@ -7,9 +7,10 @@
 //
 
 #import "ProductsViewController.h"
-#import "ProductCell.h"
+#import "headphoneCell.h"
+#import "portableChargerCell.h"
 
-#define ROW_HEIGHT 173.0f
+#define ROW_HEIGHT 230.0f
 #define SIZE_BUTTON_TAG_OFFSET 1000
 
 @interface ProductsViewController ()
@@ -22,8 +23,9 @@
     self = [super initWithCoder:aDecoder];
     
     if (self) {
+       
         // The className to query on
-		self.className = @"Item";
+        self.className = @"AllProducts";
         
 		// Whether the built-in pull-to-refresh is enabled
 		self.pullToRefreshEnabled = YES;
@@ -32,23 +34,26 @@
 		self.paginationEnabled = YES;
         
 		// The number of objects to show per page
-		self.objectsPerPage = 5;
+		self.objectsPerPage = 30;
         
         // Set the tabBarItem icon:
-        UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Catalog" image:[UIImage imageNamed:@"catalog_icon.png"] tag:0];
+        UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:@"所有商品" image:[UIImage imageNamed:@"44-shoebox.png"] tag:0];
         self.tabBarItem = tabBarItem;
     }
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    [self.tableView registerClass:[ProductCell class] forCellReuseIdentifier:@"ItemCell"];
+    //[self.tableView registerClass:[headphoneCell class] forCellReuseIdentifier:@"ItemCell"];
+    [self.tableView registerClass:[portableChargerCell class] forCellReuseIdentifier:@"ItemCell"];
     
     // Add observer for NSNotification:
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selectProductWithNotification:) name:@"com.urx.shop.productsViewController.urxLinkToProduct" object:nil];
@@ -67,8 +72,6 @@
 }
 
 
-
-
 #pragma mark - PFQueryTableViewController datasource methods
 
 - (void)objectsDidLoad:(NSError *)error {
@@ -81,35 +84,62 @@
     // This method is called before a PFQuery is fired to get more objects
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object
 {
     static NSString *CellIdentifier = @"ItemCell";
-    ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    if (!cell) {
-        cell = [[ProductCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    PFObject *product = self.objects[indexPath.row];
-    [cell configureProduct:product];
-    
-    return cell;
+            portableChargerCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+            
+            if (!cell) {
+                cell = [[portableChargerCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+            }
+            
+            PFObject *product = self.objects[indexPath.row];
+            [cell configureProduct:product];
+            
+            return cell;
+
 }
 
-
+    
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return 1;
-}
+    
+    - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+    {
+        // Return the number of sections.
+        return 1;
+        //return [heroicaArray count];
+    }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.objects count];
+        return [self.objects count];
+
 }
+
+//設定分類開頭標題
+/*- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            return @"耳機";
+            break;
+            
+        case 1:
+            return @"行動電源";
+            break;
+            
+        case 2:
+            return @"行動喇叭";
+            break;
+            
+        default:
+            return @"";
+            break;
+    }
+}
+*/
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

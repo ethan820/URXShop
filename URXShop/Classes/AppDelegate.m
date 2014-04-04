@@ -13,10 +13,10 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Parse setApplicationId:@"zIFzjuA3H4AV9W6wUTUCL8wAmkdwknfqsYJ3i1DA"clientKey:@"uYF9AGQhMCbZfKJSYQUye4FQSqk7SLTE11ml540m"];
+    [Parse setApplicationId:@"9NSZcVNZ0uIxhcFW87RBCdRs4ttoioUW3KNy5IkB"clientKey:@"UppGoDOy7VM916lcRiyC1GUfol2vD3hb5tqyu0kp"];
     
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-    
+    self.window.tintColor = [UIColor colorWithRed:140.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:1.0f];
     
     
     /******************** Begin URX Turnpike Routing: ********************/

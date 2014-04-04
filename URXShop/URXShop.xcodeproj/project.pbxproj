@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0624263D85114C90BF08BA99 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B53616DF502444658180D705 /* libPods.a */; };
+		4702BABC18E9CBB2000D2FF7 /* headphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702BABB18E9CBB2000D2FF7 /* headphoneViewController.m */; };
+		4702BABF18E9CBE5000D2FF7 /* portableChargerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702BABE18E9CBE5000D2FF7 /* portableChargerViewController.m */; };
+		472D532118E817EB00F07ED1 /* headphoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 472D532018E817EB00F07ED1 /* headphoneCell.m */; };
+		472D532418E81F7C00F07ED1 /* portableChargerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 472D532318E81F7C00F07ED1 /* portableChargerCell.m */; };
+		4767B87B18D49CDD00E4F5B6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54199E86182C706B001D3B2A /* Parse.framework */; };
+		4798873318D87DAC009557D8 /* UILabel+heightToFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4798872D18D87DAC009557D8 /* UILabel+heightToFit.m */; };
+		47AD7C6718E72702002F12E2 /* 44-shoebox.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AD7C6418E72702002F12E2 /* 44-shoebox.png */; };
+		47AD7C6818E72702002F12E2 /* 123-id-card.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AD7C6518E72702002F12E2 /* 123-id-card.png */; };
+		47AD7C6918E72702002F12E2 /* 152-rolodex.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AD7C6618E72702002F12E2 /* 152-rolodex.png */; };
 		4918FAAB16DC4A5400C663F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4918FAAA16DC4A5400C663F8 /* UIKit.framework */; };
 		4918FAAD16DC4A5400C663F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4918FAAC16DC4A5400C663F8 /* Foundation.framework */; };
 		4918FAAF16DC4A5400C663F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4918FAAE16DC4A5400C663F8 /* CoreGraphics.framework */; };
@@ -24,8 +34,6 @@
 		49524E1916E0328D000E08B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1816E0328D000E08B7 /* StoreKit.framework */; };
 		49524E1B16E032A1000E08B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */; };
 		5402BAB41815D7130006F3D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5402BAB31815D7130006F3D2 /* Images.xcassets */; };
-		54199E87182C706B001D3B2A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54199E86182C706B001D3B2A /* Parse.framework */; };
-		54199F29182C7263001D3B2A /* libTurnpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54199F28182C7262001D3B2A /* libTurnpike.a */; };
 		546F207A1814FED6002DCEBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F20791814FED6002DCEBA /* AppDelegate.m */; };
 		546F207D1814FF76002DCEBA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546F207B1814FF76002DCEBA /* Storyboard.storyboard */; };
 		546F208618150006002DCEBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F208518150005002DCEBA /* main.m */; };
@@ -39,7 +47,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4918FAA716DC4A5400C663F8 /* URX Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URX Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4702BABA18E9CBB2000D2FF7 /* headphoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = headphoneViewController.h; path = Classes/headphoneViewController.h; sourceTree = SOURCE_ROOT; };
+		4702BABB18E9CBB2000D2FF7 /* headphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = headphoneViewController.m; path = Classes/headphoneViewController.m; sourceTree = SOURCE_ROOT; };
+		4702BABD18E9CBE5000D2FF7 /* portableChargerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = portableChargerViewController.h; path = Classes/portableChargerViewController.h; sourceTree = SOURCE_ROOT; };
+		4702BABE18E9CBE5000D2FF7 /* portableChargerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = portableChargerViewController.m; path = Classes/portableChargerViewController.m; sourceTree = SOURCE_ROOT; };
+		472D531F18E817EB00F07ED1 /* headphoneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = headphoneCell.h; path = Classes/headphoneCell.h; sourceTree = SOURCE_ROOT; };
+		472D532018E817EB00F07ED1 /* headphoneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = headphoneCell.m; path = Classes/headphoneCell.m; sourceTree = SOURCE_ROOT; };
+		472D532218E81F7C00F07ED1 /* portableChargerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = portableChargerCell.h; path = Classes/portableChargerCell.h; sourceTree = SOURCE_ROOT; };
+		472D532318E81F7C00F07ED1 /* portableChargerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = portableChargerCell.m; path = Classes/portableChargerCell.m; sourceTree = SOURCE_ROOT; };
+		4798872C18D87DAC009557D8 /* UILabel+heightToFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+heightToFit.h"; path = "Classes/UILabel+heightToFit.h"; sourceTree = SOURCE_ROOT; };
+		4798872D18D87DAC009557D8 /* UILabel+heightToFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+heightToFit.m"; path = "Classes/UILabel+heightToFit.m"; sourceTree = SOURCE_ROOT; };
+		47AD7C6418E72702002F12E2 /* 44-shoebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "44-shoebox.png"; path = "Images/44-shoebox.png"; sourceTree = SOURCE_ROOT; };
+		47AD7C6518E72702002F12E2 /* 123-id-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "123-id-card.png"; path = "Images/123-id-card.png"; sourceTree = SOURCE_ROOT; };
+		47AD7C6618E72702002F12E2 /* 152-rolodex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "152-rolodex.png"; path = "Images/152-rolodex.png"; sourceTree = SOURCE_ROOT; };
+		4918FAA716DC4A5400C663F8 /* Light Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4918FAAA16DC4A5400C663F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4918FAAC16DC4A5400C663F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4918FAAE16DC4A5400C663F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,6 +97,8 @@
 		54EE72FE1810D72A00AA1C9E /* ShoppingCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppingCartViewController.m; path = Classes/ShoppingCartViewController.m; sourceTree = SOURCE_ROOT; };
 		54EE73001810D77900AA1C9E /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductViewController.h; path = Classes/ProductViewController.h; sourceTree = SOURCE_ROOT; };
 		54EE73011810D77900AA1C9E /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductViewController.m; path = Classes/ProductViewController.m; sourceTree = SOURCE_ROOT; };
+		B53616DF502444658180D705 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C789E170299E4F0E8EB2AC00 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +106,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54199F29182C7263001D3B2A /* libTurnpike.a in Frameworks */,
+				4767B87B18D49CDD00E4F5B6 /* Parse.framework in Frameworks */,
 				49524E1B16E032A1000E08B7 /* SystemConfiguration.framework in Frameworks */,
 				49524E1916E0328D000E08B7 /* StoreKit.framework in Frameworks */,
 				49524E1716E03278000E08B7 /* Social.framework in Frameworks */,
 				49524E1516E03272000E08B7 /* Security.framework in Frameworks */,
 				49524DFB16E00F47000E08B7 /* QuartzCore.framework in Frameworks */,
 				49524E1316E03262000E08B7 /* MobileCoreServices.framework in Frameworks */,
-				54199E87182C706B001D3B2A /* Parse.framework in Frameworks */,
 				49524E1116E0325B000E08B7 /* libz.1.1.3.dylib in Frameworks */,
 				49524E0F16E03252000E08B7 /* libsqlite3.dylib in Frameworks */,
 				49524E0D16E0324A000E08B7 /* CoreLocation.framework in Frameworks */,
@@ -101,6 +123,7 @@
 				49524E0516E0321C000E08B7 /* AudioToolbox.framework in Frameworks */,
 				4918FAAB16DC4A5400C663F8 /* UIKit.framework in Frameworks */,
 				4918FAAD16DC4A5400C663F8 /* Foundation.framework in Frameworks */,
+				0624263D85114C90BF08BA99 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,13 +136,14 @@
 				4918FAB016DC4A5400C663F8 /* URXShop */,
 				4918FAA916DC4A5400C663F8 /* Frameworks */,
 				4918FAA816DC4A5400C663F8 /* Products */,
+				C789E170299E4F0E8EB2AC00 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		4918FAA816DC4A5400C663F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4918FAA716DC4A5400C663F8 /* URX Shop.app */,
+				4918FAA716DC4A5400C663F8 /* Light Home.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +169,7 @@
 				4918FAAA16DC4A5400C663F8 /* UIKit.framework */,
 				4918FAAC16DC4A5400C663F8 /* Foundation.framework */,
 				4918FAAE16DC4A5400C663F8 /* CoreGraphics.framework */,
+				B53616DF502444658180D705 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,14 +191,24 @@
 			children = (
 				546F20781814FED6002DCEBA /* AppDelegate.h */,
 				546F20791814FED6002DCEBA /* AppDelegate.m */,
-				54EE72F81810D6FC00AA1C9E /* ProductsViewController.h */,
-				54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */,
-				546F3432181199E60054AF0D /* ProductCell.h */,
-				546F3433181199E60054AF0D /* ProductCell.m */,
 				54EE72FD1810D72A00AA1C9E /* ShoppingCartViewController.h */,
 				54EE72FE1810D72A00AA1C9E /* ShoppingCartViewController.m */,
+				54EE72F81810D6FC00AA1C9E /* ProductsViewController.h */,
+				54EE72F91810D6FC00AA1C9E /* ProductsViewController.m */,
+				472D531F18E817EB00F07ED1 /* headphoneCell.h */,
+				472D532018E817EB00F07ED1 /* headphoneCell.m */,
+				472D532218E81F7C00F07ED1 /* portableChargerCell.h */,
+				472D532318E81F7C00F07ED1 /* portableChargerCell.m */,
+				4702BABA18E9CBB2000D2FF7 /* headphoneViewController.h */,
+				4702BABB18E9CBB2000D2FF7 /* headphoneViewController.m */,
+				4702BABD18E9CBE5000D2FF7 /* portableChargerViewController.h */,
+				4702BABE18E9CBE5000D2FF7 /* portableChargerViewController.m */,
 				54EE73001810D77900AA1C9E /* ProductViewController.h */,
 				54EE73011810D77900AA1C9E /* ProductViewController.m */,
+				4798872C18D87DAC009557D8 /* UILabel+heightToFit.h */,
+				4798872D18D87DAC009557D8 /* UILabel+heightToFit.m */,
+				546F3432181199E60054AF0D /* ProductCell.h */,
+				546F3433181199E60054AF0D /* ProductCell.m */,
 			);
 			name = Classes;
 			path = Store/Classes;
@@ -182,6 +217,9 @@
 		4999CBEA16DD599900C6C8FC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				47AD7C6418E72702002F12E2 /* 44-shoebox.png */,
+				47AD7C6518E72702002F12E2 /* 123-id-card.png */,
+				47AD7C6618E72702002F12E2 /* 152-rolodex.png */,
 				5402BAB31815D7130006F3D2 /* Images.xcassets */,
 				546F208E1815051A002DCEBA /* catalog_icon@2x.png */,
 				546F208F1815051A002DCEBA /* shoppingCart_icon@2x.png */,
@@ -208,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4918FAC416DC4A5400C663F8 /* Build configuration list for PBXNativeTarget "URXShop" */;
 			buildPhases = (
+				EE977FD72C1644258CD7495F /* Check Pods Manifest.lock */,
 				4918FAA316DC4A5400C663F8 /* Sources */,
 				4918FAA416DC4A5400C663F8 /* Frameworks */,
 				4918FAA516DC4A5400C663F8 /* Resources */,
+				4CA659032E654E74B619C2BF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,7 +258,7 @@
 			);
 			name = URXShop;
 			productName = Store;
-			productReference = 4918FAA716DC4A5400C663F8 /* URX Shop.app */;
+			productReference = 4918FAA716DC4A5400C663F8 /* Light Home.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +272,7 @@
 				ORGANIZATIONNAME = "URX Inc.";
 				TargetAttributes = {
 					4918FAA616DC4A5400C663F8 = {
-						DevelopmentTeam = 5DK35Y766D;
+						DevelopmentTeam = XAR5KR5KK2;
 					};
 				};
 			};
@@ -258,8 +298,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47AD7C6718E72702002F12E2 /* 44-shoebox.png in Resources */,
+				47AD7C6818E72702002F12E2 /* 123-id-card.png in Resources */,
 				546F208D18150050002DCEBA /* InfoPlist.strings in Resources */,
 				5402BAB41815D7130006F3D2 /* Images.xcassets in Resources */,
+				47AD7C6918E72702002F12E2 /* 152-rolodex.png in Resources */,
 				546F207D1814FF76002DCEBA /* Storyboard.storyboard in Resources */,
 				546F20901815051A002DCEBA /* catalog_icon@2x.png in Resources */,
 				546F20911815051A002DCEBA /* shoppingCart_icon@2x.png in Resources */,
@@ -268,16 +311,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CA659032E654E74B619C2BF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE977FD72C1644258CD7495F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4918FAA316DC4A5400C663F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4702BABF18E9CBE5000D2FF7 /* portableChargerViewController.m in Sources */,
 				54EE73021810D77900AA1C9E /* ProductViewController.m in Sources */,
+				4702BABC18E9CBB2000D2FF7 /* headphoneViewController.m in Sources */,
 				546F207A1814FED6002DCEBA /* AppDelegate.m in Sources */,
+				4798873318D87DAC009557D8 /* UILabel+heightToFit.m in Sources */,
+				472D532418E81F7C00F07ED1 /* portableChargerCell.m in Sources */,
 				54EE72FA1810D6FC00AA1C9E /* ProductsViewController.m in Sources */,
 				54EE72FF1810D72A00AA1C9E /* ShoppingCartViewController.m in Sources */,
 				546F208618150006002DCEBA /* main.m in Sources */,
+				472D532118E817EB00F07ED1 /* headphoneCell.m in Sources */,
 				546F3434181199E60054AF0D /* ProductCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +415,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "../turnpike-ios/Turnpike";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -360,13 +441,14 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "../turnpike-ios/Turnpike";
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		4918FAC516DC4A5400C663F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C789E170299E4F0E8EB2AC00 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -374,19 +456,15 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
-					/Users/davidlee/Dropbox/Web_Development/2013/URX/URXShopWorkspace/URXShop/Vendor,
+					"$(PROJECT_DIR)/Vendor",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URXShop-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/URXShop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/URXShopWorkspace-grecyqzmgdgfvyddvbwslkhpauws/Build/Products/Debug-iphoneos",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/URXShopWorkspace-fqhfrymjnqhckfammtukikwviltd/Build/Products/Debug-iphoneos",
-				);
-				PRODUCT_NAME = "URX Shop";
+				LIBRARY_SEARCH_PATHS = /Users/ethan820/URXShop/Pods/Turnpike/Turnpike;
+				PODS_ROOT = /Users/ethan820/URXShop/Pods;
+				PRODUCT_NAME = "Light Home";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -395,6 +473,7 @@
 		};
 		4918FAC616DC4A5400C663F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C789E170299E4F0E8EB2AC00 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -402,19 +481,15 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
-					/Users/davidlee/Dropbox/Web_Development/2013/URX/URXShopWorkspace/URXShop/Vendor,
+					"$(PROJECT_DIR)/Vendor",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URXShop-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/URXShop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/URXShopWorkspace-grecyqzmgdgfvyddvbwslkhpauws/Build/Products/Debug-iphoneos",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/URXShopWorkspace-fqhfrymjnqhckfammtukikwviltd/Build/Products/Debug-iphoneos",
-				);
-				PRODUCT_NAME = "URX Shop";
+				LIBRARY_SEARCH_PATHS = /Users/ethan820/URXShop/Pods/Turnpike/Turnpike;
+				PODS_ROOT = /Users/ethan820/URXShop/Pods;
+				PRODUCT_NAME = "Light Home";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;

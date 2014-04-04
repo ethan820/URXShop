@@ -8,6 +8,7 @@
 
 #import "UILabel+heightToFit.h"
 
+
 @implementation UILabel (heightToFit)
 
 -(CGFloat)heightToFit{
@@ -21,7 +22,7 @@
     CGFloat height;
     
     NSMutableParagraphStyle *style  = [[NSMutableParagraphStyle alloc] init];
-    style.lineHeightMultiple = 1.5;
+    style.lineHeightMultiple = 1.2;
     self.attributedText = [[NSAttributedString alloc] initWithString:string attributes:@{NSParagraphStyleAttributeName:style, NSFontAttributeName:self.font}];
     
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {

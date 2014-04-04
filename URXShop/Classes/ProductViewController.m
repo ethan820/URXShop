@@ -39,19 +39,20 @@
 }
 
 
-
-
 #pragma mark - Public
 
 - (void)configureProduct:(PFObject *)product {
 
+    NSString *stringC = [NSString stringWithFormat:@"\n%@\n%@",@"headphone",@"portableCharger"];
+    NSLog(@"%@",stringC);
+    
     self.itemImage.file = (PFFile *)product[@"image"];
     self.itemImage.contentMode = UIViewContentModeScaleAspectFit;
     [self.itemImage loadInBackground];
     
     self.itemPrice.text = [NSString stringWithFormat:@"$%d", [product[@"price"] intValue]];
     
-    self.itemName.text = product[@"description"];
+    self.itemName.text = product[@"name"];
     self.itemName.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:19.0f];
     self.itemName.textColor = [UIColor colorWithRed:82.0f/255.0f green:87.0f/255.0f blue:90.0f/255.0f alpha:1.0f];
     self.itemName.backgroundColor = [UIColor clearColor];

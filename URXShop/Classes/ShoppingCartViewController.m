@@ -7,9 +7,9 @@
 //
 
 #import "ShoppingCartViewController.h"
-#import "ProductCell.h"
+#import "headphoneCell.h"
 
-#define ROW_HEIGHT 173.0f
+#define ROW_HEIGHT 230.0f
 #define SIZE_BUTTON_TAG_OFFSET 1000
 
 @interface ShoppingCartViewController ()
@@ -23,7 +23,7 @@
     
     if (self) {
         // The className to query on
-		self.className = @"Item";
+		self.className = @"headphones";
         
 		// Whether the built-in pull-to-refresh is enabled
 		self.pullToRefreshEnabled = YES;
@@ -32,12 +32,15 @@
 		self.paginationEnabled = YES;
         
 		// The number of objects to show per page
-		self.objectsPerPage = 1;
+		self.objectsPerPage = 10;
         
         // Set the tabBarItem icon:
-        UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Catalog" image:[UIImage imageNamed:@"shoppingCart_icon.png"] tag:1];
+        UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:@"推薦商品" image:[UIImage imageNamed:@"152-rolodex.png"] tag:1];
+        
         self.tabBarItem = tabBarItem;
-    }
+        
+        
+        }
     return self;
 }
 
@@ -48,7 +51,7 @@
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
 
-    [self.tableView registerClass:[ProductCell class] forCellReuseIdentifier:@"ItemCell"];
+    [self.tableView registerClass:[headphoneCell class] forCellReuseIdentifier:@"ItemCell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,10 +78,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object
 {
     static NSString *CellIdentifier = @"ItemCell";
-    ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    headphoneCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     if (!cell) {
-        cell = [[ProductCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[headphoneCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     PFObject *product = self.objects[indexPath.row];
@@ -102,8 +105,34 @@
     return [self.objects count];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     return ROW_HEIGHT;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self selectProduct:[self.objects objectAtIndex:indexPath.row]];
+}
+
+#pragma mark - NSNotification handler
+- (void)selectProductWithNotification:(NSNotification *)notification
+{
+    NSDictionary *dict = [notification userInfo];
+    NSInteger product_id = [[dict objectForKey:@"product_id"] intValue];
+    NSIndexPath *path = [NSIndexPath indexPathForRow:product_id inSection:1];
+    [self selectProduct:[self.objects objectAtIndex:path.row]];
+}
+
+
+#pragma mark - Load ProductViewController:
+- (void)selectProduct:(PFObject *)product
+{
+    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    headphoneViewController *headphoneViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"headphoneViewController"];
+    headphoneViewController.item = product;
+    [self.navigationController pushViewController:headphoneViewController animated:YES];
+}
+
 
 @end

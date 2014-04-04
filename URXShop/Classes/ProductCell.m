@@ -9,7 +9,7 @@
 #import "ProductCell.h"
 
 #define ROW_MARGIN 6.0f
-#define ROW_HEIGHT 173.0f
+#define ROW_HEIGHT 230.0f
 
 @implementation ProductCell
 
@@ -52,7 +52,6 @@
     [self.textLabel sizeToFit];
     self.textLabel.frame = CGRectMake(x + 2.0f, y, self.textLabel.frame.size.width, self.textLabel.frame.size.height);
     y += self.textLabel.frame.size.height + 2.0f;
-    
     y += 6.0f;
 }
 
@@ -72,7 +71,7 @@
     
     self.priceLabel.text = [NSString stringWithFormat:@"$%d", [product[@"price"] intValue]];
     
-    self.textLabel.text = product[@"description"];
+    self.textLabel.text = product[@"name"];
     self.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:19.0f];
     self.textLabel.textColor = [UIColor colorWithRed:82.0f/255.0f green:87.0f/255.0f blue:90.0f/255.0f alpha:1.0f];
     self.textLabel.shadowColor = [UIColor colorWithWhite:1.0f alpha:0.7f];
