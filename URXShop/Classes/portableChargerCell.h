@@ -11,9 +11,9 @@
 @interface portableChargerCell : PFTableViewCell
 
 @property (nonatomic, strong) UILabel *priceLabel;
-@property (nonatomic, strong) UILabel *weightLabel;
-@property (nonatomic, strong) UILabel *capacityLabel;
-@property (nonatomic, strong) UILabel *ampereLabel;
+//@property (nonatomic, strong) UILabel *weightLabel;
+//@property (nonatomic, strong) UILabel *capacityLabel;
+//@property (nonatomic, strong) UILabel *ampereLabel;
 
 - (void)configureProduct:(PFObject *)product;
 

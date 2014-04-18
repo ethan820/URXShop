@@ -43,7 +43,7 @@
 
 - (void)configureProduct:(PFObject *)product {
 
-    NSString *stringC = [NSString stringWithFormat:@"\n%@\n%@",@"headphone",@"portableCharger"];
+    NSString *stringC = [NSString stringWithFormat:@"\n%@\n%@\n%@",@"headphone",@"portableCharger",@"inProductViewController"];
     NSLog(@"%@",stringC);
     
     self.itemImage.file = (PFFile *)product[@"image"];

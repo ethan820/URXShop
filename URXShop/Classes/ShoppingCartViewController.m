@@ -7,7 +7,8 @@
 //
 
 #import "ShoppingCartViewController.h"
-#import "headphoneCell.h"
+#import "StarProductsCell.h"
+#import "Cloudinary.h"
 
 #define ROW_HEIGHT 230.0f
 #define SIZE_BUTTON_TAG_OFFSET 1000
@@ -23,7 +24,7 @@
     
     if (self) {
         // The className to query on
-		self.className = @"headphones";
+		self.className = @"starProducts";
         
 		// Whether the built-in pull-to-refresh is enabled
 		self.pullToRefreshEnabled = YES;
@@ -32,7 +33,7 @@
 		self.paginationEnabled = YES;
         
 		// The number of objects to show per page
-		self.objectsPerPage = 10;
+		self.objectsPerPage = 6;
         
         // Set the tabBarItem icon:
         UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:@"推薦商品" image:[UIImage imageNamed:@"152-rolodex.png"] tag:1];
@@ -51,7 +52,7 @@
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
 
-    [self.tableView registerClass:[headphoneCell class] forCellReuseIdentifier:@"ItemCell"];
+    [self.tableView registerClass:[StarProductsCell class] forCellReuseIdentifier:@"ItemCell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,16 +79,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object
 {
     static NSString *CellIdentifier = @"ItemCell";
-    headphoneCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    StarProductsCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     if (!cell) {
-        cell = [[headphoneCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[StarProductsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
+    //PFQuery *query = [PFQuery queryWithClassName:@"starProducts"];
     PFObject *product = self.objects[indexPath.row];
     [cell configureProduct:product];
-    
     return cell;
+    
+    
 }
 
 
@@ -129,9 +132,9 @@
 - (void)selectProduct:(PFObject *)product
 {
     UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-    headphoneViewController *headphoneViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"headphoneViewController"];
-    headphoneViewController.item = product;
-    [self.navigationController pushViewController:headphoneViewController animated:YES];
+    portableChargerViewController *portableChargerViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"portableChargerViewController"];
+    portableChargerViewController.item = product;
+    [self.navigationController pushViewController:portableChargerViewController animated:YES];
 }
 
 

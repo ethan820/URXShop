@@ -9,6 +9,7 @@
 #import <Turnpike/Turnpike.h>
 #import "ProductsViewController.h"
 #import "ProductViewController.h"
+#import "GAI.h"
 
 @implementation AppDelegate
 
@@ -18,6 +19,25 @@
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     self.window.tintColor = [UIColor colorWithRed:140.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:1.0f];
     
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor whiteColor];
+    //shadow.shadowOffset = CGSizeMake(0, 1);
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont fontWithName:@"HelveticaNeue-Bold" size:19.0], NSFontAttributeName, nil]];
+    
+    // Optional: automatically send uncaught exceptions to Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 20;
+    
+    // Optional: set Logger to VERBOSE for debug information.
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    
+    // Initialize tracker. Replace with your tracking ID.
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-44222176-3"];
     
     /******************** Begin URX Turnpike Routing: ********************/
     

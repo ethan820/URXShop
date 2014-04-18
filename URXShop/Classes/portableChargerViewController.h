@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface portableChargerViewController : UIViewController
+
+@interface portableChargerViewController : GAITrackedViewController
+
+@property (nonatomic, strong) PFObject *item;
+@property (nonatomic, strong) IBOutlet PFImageView *itemImage;
+@property (nonatomic, strong) IBOutlet UILabel *itemName;
+@property (nonatomic, strong) IBOutlet UILabel *itemData;
+@property (strong, nonatomic) IBOutlet UIButton *itemButton;
+
+@property (nonatomic, retain) IBOutlet UITableView *itemTableView;
+
+
+- (void)configureProduct:(PFObject *)product;
 
 @end
+

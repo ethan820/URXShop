@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ProductViewController.h"
+#import "portableChargerViewController.h"
 
 @interface ProductsViewController : PFQueryTableViewController
+
+@property (nonatomic, strong) PFObject *item;
 
 @end
