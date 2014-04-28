@@ -11,6 +11,6 @@
 
 @interface ProductsViewController : PFQueryTableViewController
 
-@property (nonatomic, strong) PFObject *item;
+//@property (nonatomic, strong) PFObject *item;
 
 @end

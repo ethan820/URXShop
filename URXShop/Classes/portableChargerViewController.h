@@ -18,7 +18,6 @@
 @property (nonatomic, strong) IBOutlet UILabel *itemData;
 @property (strong, nonatomic) IBOutlet UIButton *itemButton;
 
-@property (nonatomic, retain) IBOutlet UITableView *itemTableView;
 
 
 - (void)configureProduct:(PFObject *)product;

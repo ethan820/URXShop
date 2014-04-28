@@ -18,7 +18,7 @@
 @end
 
 @implementation portableChargerViewController
-@synthesize item = _item, itemImage = _itemImage, itemName = _itemName, itemData = _itemData, itemTableView = _itemTableView;
+@synthesize item = _item, itemImage = _itemImage, itemName = _itemName, itemData = _itemData;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,7 +45,6 @@
     
     [self configureProduct:self.item];
     [self tapButton];
-    //[self.itemTableView reloadData];
     //[self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -70,12 +69,13 @@
     NSURL *url = [NSURL URLWithString:urlString];
     //[[UIApplication sharedApplication] openURL:url];
     
-    /*TSMiniWebBrowser *webBrowser = [[TSMiniWebBrowser alloc] initWithUrl:url];
-    [self.navigationController pushViewController:webBrowser animated:YES];*/
+    TSMiniWebBrowser *webBrowser = [[TSMiniWebBrowser alloc] initWithUrl:url];
+    [self.navigationController pushViewController:webBrowser animated:YES];
+    //[webBrowser release];
     
-    BrowserViewController *bvc = [[BrowserViewController alloc] initWithUrls:url];
+    /*BrowserViewController *bvc = [[BrowserViewController alloc] initWithUrls:url];
     [self.navigationController pushViewController:bvc animated:YES];
-    [bvc release];
+    [bvc release];*/
 }
 
 
@@ -113,10 +113,10 @@
     self.itemData.x=x;
     self.itemData.y=y;
     
-    self.itemButton.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f];
-    self.itemButton.x=self.itemImage.x+self.itemImage.width-110.0f;
-    self.itemButton.y=480-87;
-    self.itemButton.layer.cornerRadius = 6;
+    self.itemButton.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:18.0f];
+    self.itemButton.x=self.itemImage.x+self.itemImage.width-self.itemButton.width-18.0f;
+    self.itemButton.y=480-84;
+    self.itemButton.layer.cornerRadius = 4;
 }
 
 -(NSString *) imageURLString:(PFObject *)product

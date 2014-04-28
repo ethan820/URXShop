@@ -17,7 +17,7 @@
     [Parse setApplicationId:@"9NSZcVNZ0uIxhcFW87RBCdRs4ttoioUW3KNy5IkB"clientKey:@"UppGoDOy7VM916lcRiyC1GUfol2vD3hb5tqyu0kp"];
     
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-    self.window.tintColor = [UIColor colorWithRed:140.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:1.0f];
+    self.window.tintColor = [UIColor colorWithRed:150.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:1.0f];
     
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor whiteColor];
@@ -70,6 +70,15 @@
         [tabBarController setSelectedIndex:tabIndexToSet];
     }];
     
+        //rest of your code!!!!!!!
+        NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    EDIT:
+        if( [[NSUserDefaults standardUserDefaults] boolForKey:@"isExceptionOccured"])
+        {
+            //call sever code here
+            [[NSUserDefaults standardUserDefaults] setBool:FALSE forKey:@"isExceptionOccured"];
+        }
+    
     
     return YES;
 }
@@ -85,10 +94,17 @@
     [Turnpike resolveURL:url];
     return YES;
 }
-                                                                                                                                                 
-                                                                                                                                                 
-                                                                                                                                                 
-                                                                                                                                                 
-                                                                                                                                                 
-                                                                                                                                                 
+
+//rest of your code!!!!!!!!!!
+void uncaughtExceptionHandler(NSException *exception)
+{
+    NSLog(@"Exception Got %@",[exception description]);
+    //do what ever you what here
+    //can save any `bool` so that as aaplication  run on immediate next launching of crash
+    //could intimate any thing
+EDIT:
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isExceptionOccured"];
+    
+}
+
 @end

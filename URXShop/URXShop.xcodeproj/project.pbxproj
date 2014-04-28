@@ -92,11 +92,6 @@
 		47ABCAB418F1A7A70069D0F1 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		47ACBF6A18F94C950059A295 /* libCloudinary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCloudinary.a; path = ../../Downloads/cloudinary_ios_v1.0.10/libCloudinary.a; sourceTree = "<group>"; };
 		47ACBF6C18F94CEE0059A295 /* libCloudinary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCloudinary.a; path = Vendor/libCloudinary.a; sourceTree = "<group>"; };
-		47ACBF7518F9637C0059A295 /* CLCloudinary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCloudinary.h; sourceTree = "<group>"; };
-		47ACBF7618F9637C0059A295 /* CLEagerTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLEagerTransformation.h; sourceTree = "<group>"; };
-		47ACBF7718F9637C0059A295 /* Cloudinary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cloudinary.h; sourceTree = "<group>"; };
-		47ACBF7818F9637C0059A295 /* CLTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTransformation.h; sourceTree = "<group>"; };
-		47ACBF7918F9637C0059A295 /* CLUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLUploader.h; sourceTree = "<group>"; };
 		47AD746518F29FC1009DDE9F /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
 		47AD746618F29FC1009DDE9F /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
 		47AD746718F29FC1009DDE9F /* BrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserViewController.xib; sourceTree = "<group>"; };
@@ -116,7 +111,7 @@
 		47AD7C6418E72702002F12E2 /* 44-shoebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "44-shoebox.png"; path = "Images/44-shoebox.png"; sourceTree = SOURCE_ROOT; };
 		47AD7C6518E72702002F12E2 /* 123-id-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "123-id-card.png"; path = "Images/123-id-card.png"; sourceTree = SOURCE_ROOT; };
 		47AD7C6618E72702002F12E2 /* 152-rolodex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "152-rolodex.png"; path = "Images/152-rolodex.png"; sourceTree = SOURCE_ROOT; };
-		4918FAA716DC4A5400C663F8 /* Light Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4918FAA716DC4A5400C663F8 /* LightenUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightenUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4918FAAA16DC4A5400C663F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4918FAAC16DC4A5400C663F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4918FAAE16DC4A5400C663F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -207,18 +202,6 @@
 			path = ../../Downloads/GoogleAnalyticsServicesiOS_3.06/GoogleAnalytics/Library;
 			sourceTree = "<group>";
 		};
-		47ACBF7418F9637C0059A295 /* Cloudinary */ = {
-			isa = PBXGroup;
-			children = (
-				47ACBF7518F9637C0059A295 /* CLCloudinary.h */,
-				47ACBF7618F9637C0059A295 /* CLEagerTransformation.h */,
-				47ACBF7718F9637C0059A295 /* Cloudinary.h */,
-				47ACBF7818F9637C0059A295 /* CLTransformation.h */,
-				47ACBF7918F9637C0059A295 /* CLUploader.h */,
-			);
-			path = Cloudinary;
-			sourceTree = "<group>";
-		};
 		47AD746418F29FC1009DDE9F /* BrowserViewController (Copy to your App) */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				47AA4A0418FABD85000AE3A7 /* SDWebImage.framework */,
-				47ACBF7418F9637C0059A295 /* Cloudinary */,
 				47AD747518F2CA9A009DDE9F /* TSMiniWebBrowser */,
 				47AD746418F29FC1009DDE9F /* BrowserViewController (Copy to your App) */,
 				47ABCAAE18F1A7A70069D0F1 /* Library */,
@@ -276,7 +258,7 @@
 		4918FAA816DC4A5400C663F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4918FAA716DC4A5400C663F8 /* Light Home.app */,
+				4918FAA716DC4A5400C663F8 /* LightenUp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -398,7 +380,7 @@
 			);
 			name = URXShop;
 			productName = Store;
-			productReference = 4918FAA716DC4A5400C663F8 /* Light Home.app */;
+			productReference = 4918FAA716DC4A5400C663F8 /* LightenUp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -552,7 +534,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sheng Yuan Lin (V98D6H4RLD)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -585,7 +567,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sheng Yuan Lin (XAR5KR5KK2)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -607,8 +589,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sheng Yuan Lin (V98D6H4RLD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sheng Yuan Lin (V98D6H4RLD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor",
@@ -625,8 +607,8 @@
 					"$(PROJECT_DIR)/Vendor",
 				);
 				PODS_ROOT = /Users/ethan820/URXShop/Pods;
-				PRODUCT_NAME = "Light Home";
-				PROVISIONING_PROFILE = "";
+				PRODUCT_NAME = LightenUp;
+				PROVISIONING_PROFILE = "0FF2E461-DDE2-4946-8496-386B67E29645";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -639,8 +621,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sheng Yuan Lin (V98D6H4RLD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sheng Yuan Lin (XAR5KR5KK2)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor",
@@ -657,8 +639,8 @@
 					"$(PROJECT_DIR)/Vendor",
 				);
 				PODS_ROOT = /Users/ethan820/URXShop/Pods;
-				PRODUCT_NAME = "Light Home";
-				PROVISIONING_PROFILE = "";
+				PRODUCT_NAME = LightenUp;
+				PROVISIONING_PROFILE = "A52F043D-B61D-49DF-8C70-66A3766E50FF";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
