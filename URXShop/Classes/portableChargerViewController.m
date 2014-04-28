@@ -71,7 +71,7 @@
     
     TSMiniWebBrowser *webBrowser = [[TSMiniWebBrowser alloc] initWithUrl:url];
     [self.navigationController pushViewController:webBrowser animated:YES];
-    //[webBrowser release];
+    [webBrowser release];
     
     /*BrowserViewController *bvc = [[BrowserViewController alloc] initWithUrls:url];
     [self.navigationController pushViewController:bvc animated:YES];
