@@ -18,9 +18,8 @@
 @property (nonatomic, strong) IBOutlet UILabel *itemData;
 @property (strong, nonatomic) IBOutlet UIButton *itemButton;
 
-
-
 - (void)configureProduct:(PFObject *)product;
+- (IBAction)openBrowser:(id)sender;
 
 @end
 

@@ -97,7 +97,7 @@
     if (self) {
        
         // The className to query on
-        self.className = @"AllProducts";
+        self.parseClassName = @"AllProducts";
         
 		// Whether the built-in pull-to-refresh is enabled
 		self.pullToRefreshEnabled = YES;
@@ -125,7 +125,6 @@
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    //[self.tableView registerClass:[headphoneCell class] forCellReuseIdentifier:@"ItemCell"];
     [self.tableView registerClass:[portableChargerCell class] forCellReuseIdentifier:@"ItemCell"];
     
     // Add observer for NSNotification:

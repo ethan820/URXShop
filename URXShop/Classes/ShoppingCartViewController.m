@@ -31,7 +31,7 @@
     if (self) {
         
         // The className to query on
-        self.className = @"AllProducts";
+        self.parseClassName = @"AllProducts";
         
 		// Whether the built-in pull-to-refresh is enabled
 		self.pullToRefreshEnabled = YES;

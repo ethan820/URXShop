@@ -12,7 +12,6 @@
 #import "TSMiniWebBrowser.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-
 @interface portableChargerViewController ()
 
 @end
@@ -29,26 +28,15 @@
     return self;
 }
 
--(id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.screenName = @"allprductsScreen";
 	// Do any additional setup after loading the view.
-    
+    //[self.itemButton addTarget:self action:@selector(openBrowser:) forControlEvents:UIControlEventTouchUpInside];
     [self configureProduct:self.item];
-    [self tapButton];
+    
     //[self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -56,32 +44,28 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)tapButton
-{
-    [self.itemButton addTarget:self action:@selector(openBrowser:) forControlEvents:UIControlEventTouchUpInside];
-}
 
 - (void) openBrowser:(id)sender {
-    
     PFObject *product = self.item;
     NSString *urlString = product[@"link"];
-    
     NSURL *url = [NSURL URLWithString:urlString];
-    //[[UIApplication sharedApplication] openURL:url];
     
-    TSMiniWebBrowser *webBrowser = [[TSMiniWebBrowser alloc] initWithUrl:url];
+    TSMiniWebBrowser *webBrowser= [[TSMiniWebBrowser alloc] initWithUrl:url ];
     [self.navigationController pushViewController:webBrowser animated:YES];
     [webBrowser release];
     
+    //[[UIApplication sharedApplication] openURL:url];
     /*BrowserViewController *bvc = [[BrowserViewController alloc] initWithUrls:url];
     [self.navigationController pushViewController:bvc animated:YES];
     [bvc release];*/
 }
 
+- (IBAction)openBrower:(id)sender {
+}
+
 
 #pragma mark - Public
 - (void)configureProduct:(PFObject *)product {
-    
     //self.itemImage.file = (PFFile *)product[@"image"];
     //self.itemImage.contentMode = UIViewContentModeScaleAspectFit;
     //[self.itemImage loadInBackground];
@@ -200,8 +184,8 @@
     self.itemData.text=stringAll;
 }
 
-
-/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+/*
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 	if ([segue.identifier isEqualToString:@"buy"])
 	{

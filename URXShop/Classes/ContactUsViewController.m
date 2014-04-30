@@ -27,7 +27,7 @@
     
     if (self) {
         // The className to query on
-		self.className = @"contactus";
+		self.parseClassName = @"contactus";
         
 		// Whether the built-in pull-to-refresh is enabled
 		self.pullToRefreshEnabled = YES;
