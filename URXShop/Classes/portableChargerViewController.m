@@ -31,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.screenName = @"allproductsScreen";
 	// Do any additional setup after loading the view.
     //[self.itemButton addTarget:self action:@selector(openBrowser:) forControlEvents:UIControlEventTouchUpInside];
     [self configureProduct:self.item];
@@ -47,6 +48,7 @@
 
 - (void) openBrowser:(id)sender {
     PFObject *product = self.item;
+    
     NSString *urlString = product[@"link"];
     NSURL *url = [NSURL URLWithString:urlString];
     

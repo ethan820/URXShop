@@ -594,7 +594,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor",
 					"$(PROJECT_DIR)",
-					/Users/ethan820/Downloads,
 					"/Users/ethan820/URXShop/Pods/Parse-iOS-SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -604,9 +603,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Vendor",
 					/Users/ethan820/URXShop/Pods/Turnpike/Turnpike,
-					/Users/ethan820/Downloads/GoogleAnalyticsServicesiOS_3.06,
-					/Users/ethan820/Downloads/cloudinary_ios_v1.0.10,
 					"/Users/ethan820/URXShop/Pods/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -633,7 +631,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor",
 					"$(PROJECT_DIR)",
-					/Users/ethan820/Downloads,
 					"/Users/ethan820/URXShop/Pods/Parse-iOS-SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -643,8 +640,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Vendor",
 					/Users/ethan820/URXShop/Pods/Turnpike/Turnpike,
-					/Users/ethan820/Downloads/GoogleAnalyticsServicesiOS_3.06,
-					/Users/ethan820/Downloads/cloudinary_ios_v1.0.10,
+					"$(PROJECT_DIR)",
 					"/Users/ethan820/URXShop/Pods/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = YES;

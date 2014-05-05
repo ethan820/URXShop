@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "portableChargerViewController.h"
 
-@interface ShoppingCartViewController : PFQueryTableViewController
+@interface ShoppingCartViewController : PFQueryTableViewController 
 
 @property (nonatomic, strong) NSMutableDictionary *sections;
 @property (nonatomic, strong) NSMutableDictionary *sectionToTypeMap;
